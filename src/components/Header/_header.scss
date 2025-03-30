@@ -1,0 +1,19 @@
+@import '../../styles/base/variables';
+
+.header {
+  padding: 20px;
+  background-color: #fdf6f6;
+  border-bottom: 1px solid #f5c3c3;
+  text-align: center;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    color: white;
+    margin: 0;
+  }
+}

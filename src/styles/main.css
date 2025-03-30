@@ -1,10 +1,27 @@
 @font-face {
   font-family: "MV Crooker";
-  src: url("../fonts/MV-Crooker.otf") format("opentype");
+  src: url("../assets/fonts/MV-Crooker.otf") format("opentype");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
+.header {
+  padding: 20px;
+  background-color: #fdf6f6;
+  border-bottom: 1px solid #f5c3c3;
+  text-align: center;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header h3 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  color: white;
+  margin: 0;
+}
+
 .navigation {
   position: relative;
 }
