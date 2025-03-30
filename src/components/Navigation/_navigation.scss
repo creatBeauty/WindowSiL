@@ -1,0 +1,39 @@
+@import '../../styles/base/variables';
+
+.navigation {
+  padding: 1rem;
+  background-color: #fdf6f6;
+  border-bottom: 1px solid #f5c3c3;
+
+  &__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+
+    li {
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  &__link {
+    font-family: $font-family-base;
+    font-size: $font-size-medium;
+    color: $text-color-primary;
+    text-decoration: none;
+    padding: 8px 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+    &:hover {
+      color: $text-color-secondary;
+    }
+
+    &.active {
+      font-weight: $font-weight-bold;
+    }
+  }
+}

@@ -1,0 +1,115 @@
+// Сначала импортируем шрифты
+@import '../fonts/fonts';
+
+// Затем переменные
+@import 'base/variables';
+
+// Затем компоненты
+@import '../components/Navigation/navigation';
+
+// Базовые стили
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $font-family-base;
+  line-height: $line-height-base;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+// Стили для страниц
+.page {
+  display: none;
+
+  &.active {
+    display: block;
+  }
+}
+
+// Адаптивные отступы
+@media (max-width: 768px) {
+  .page {
+    padding: 15px;
+  }
+}
+
+// Адаптивная типография
+html {
+  font-size: 16px;
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 14px;
+  }
+}
+
+// Адаптивные изображения
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+// Адаптивные таблицы
+table {
+  width: 100%;
+  overflow-x: auto;
+  display: block;
+}
+
+// Адаптивные формы
+input,
+select,
+textarea {
+  width: 100%;
+  max-width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+// Адаптивные сетки
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+// Адаптивные карточки
+.card {
+  padding: 15px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+// Стили для хедера
+.header {
+  background-color: #343a40;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+// Стили для футера
+.footer {
+  background-color: #343a40;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+// Адаптивное меню (уже есть)
+.navigation {
+  @media (max-width: 768px) {
+    &__list {
+      flex-direction: column;
+    }
+  }
+}

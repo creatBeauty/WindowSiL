@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WindowSill - Калькулятор подоконников</title>
+    <link rel="stylesheet" href="src/styles/main.css" />
+  </head>
+  <body>
+    <header class="header">
+      <h1>WindowSill</h1>
+    </header>
+
+    <nav class="navigation">
+      <ul class="navigation__list">
+        <li><a data-page="home" class="navigation__link">Главная</a></li>
+        <li>
+          <a data-page="calculator" class="navigation__link">Калькулятор</a>
+        </li>
+        <li>
+          <a data-page="stone-selection" class="navigation__link"
+            >Выберите камень</a
+          >
+        </li>
+        <li><a data-page="cart" class="navigation__link">Корзина</a></li>
+        <li>
+          <a data-page="drawing" class="navigation__link">Чертеж подоконника</a>
+        </li>
+        <li><a data-page="cutting" class="navigation__link">Раскрой</a></li>
+        <li><a data-page="contacts" class="navigation__link">Контакты</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <section id="home" class="page home">
+        <div>
+          <img
+            src="./src/assets/images/mobile/Вся главная страница мобильник.png"
+            alt=""
+          />
+        </div>
+      </section>
+
+      <section id="calculator" class="page calculator">Калькулятор</section>
+
+      <section id="stone-selection" class="page stone-selection">
+        Выберите камень
+      </section>
+
+      <section id="cart" class="page cart">Корзина</section>
+
+      <section id="drawing" class="page drawing">Чертеж подоконника</section>
+
+      <section id="cutting" class="page cutting">Раскрой</section>
+
+      <section id="contacts" class="page contacts">Контакты</section>
+    </main>
+
+    <footer class="footer">
+      <!-- Содержимое футера -->
+    </footer>
+
+    <script type="module" src="src/main.js"></script>
+  </body>
+</html>
