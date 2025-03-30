@@ -32,6 +32,7 @@ function showPage(pageId) {
 // Инициализация навигации
 function initNavigation() {
   const nav = document.querySelector('.navigation');
+  initBurgerMenu();
 
   // Обработчик кликов
   nav.addEventListener('click', (e) => {
@@ -51,3 +52,23 @@ function initNavigation() {
 
 // Запускаем навигацию
 initNavigation();
+
+function initBurgerMenu() {
+  const burgerBtn = document.querySelector('.burger-btn');
+  const navMenu = document.querySelector('.navigation__menu');
+
+  if (burgerBtn && navMenu) {
+    burgerBtn.addEventListener('click', () => {
+      burgerBtn.classList.toggle('active');
+      navMenu.classList.toggle('active');
+    });
+
+    // Закрываем меню при клике на пункт меню
+    navMenu.addEventListener('click', (e) => {
+      if (e.target.closest('.navigation__link')) {
+        burgerBtn.classList.remove('active');
+        navMenu.classList.remove('active');
+      }
+    });
+  }
+}

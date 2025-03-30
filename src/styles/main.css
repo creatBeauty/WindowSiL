@@ -6,36 +6,83 @@
   font-display: swap;
 }
 .navigation {
-  padding: 1rem;
-  background-color: #fdf6f6;
-  border-bottom: 1px solid #f5c3c3;
+  position: relative;
+}
+.navigation .burger-btn {
+  width: 55px;
+  height: 50px;
+  border: 3px solid #866e6e;
+  border-radius: 10px;
+  background: #fff;
+  position: absolute;
+  top: 22px;
+  right: 22px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  z-index: 100;
+}
+.navigation .burger-btn::before {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 4px;
+  background: #866e6e;
+  transform: translateY(-10px);
+  box-shadow: 0 10px 0 #866e6e;
+  transition: all 0.3s ease;
+}
+.navigation .burger-btn::after {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 4px;
+  background: #866e6e;
+  transform: translateY(10px);
+  transition: all 0.3s ease;
+}
+.navigation .burger-btn.active::before {
+  transform: rotate(45deg);
+  box-shadow: 0 0 0 #866e6e;
+}
+.navigation .burger-btn.active::after {
+  transform: rotate(-45deg);
+}
+.navigation__menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background: #fff;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.navigation__menu.active {
+  display: block;
 }
 .navigation__list {
   list-style: none;
   padding: 0;
   margin: 0;
   display: flex;
-  justify-content: center;
-  gap: 20px;
-}
-.navigation__list li {
-  display: flex;
-  align-items: center;
+  flex-direction: column;
+  gap: 10px;
 }
 .navigation__link {
-  font-family: "MV Crooker", sans-serif;
-  font-size: 16px;
+  display: block;
+  padding: 10px;
   color: #866e6e;
   text-decoration: none;
-  padding: 8px 16px;
-  cursor: pointer;
   transition: all 0.3s ease;
 }
 .navigation__link:hover {
-  color: #7e6e12;
+  background: rgba(0, 0, 0, 0.05);
 }
 .navigation__link.active {
-  font-weight: 700;
+  background: rgba(0, 0, 0, 0.1);
+  font-weight: bold;
 }
 
 * {

@@ -1,39 +1,210 @@
 @import '../../styles/base/variables';
 
 .navigation {
-  padding: 1rem;
-  background-color: #fdf6f6;
-  border-bottom: 1px solid #f5c3c3;
+  position: relative;
+
+  .burger-btn {
+    width: 55px;
+    height: 50px;
+    border: 3px solid $text-color-primary;
+    border-radius: 10px;
+    background: #fff;
+    position: absolute;
+    top: 22px;
+    right: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    z-index: 100;
+
+    &::before {
+      content: '';
+      position: absolute;
+      width: 30px;
+      height: 4px;
+      background: $text-color-primary;
+      transform: translateY(-10px);
+      box-shadow: 0 10px 0 $text-color-primary;
+      transition: all 0.3s ease;
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      width: 30px;
+      height: 4px;
+      background: $text-color-primary;
+      transform: translateY(10px);
+      transition: all 0.3s ease;
+    }
+
+    &.active {
+      &::before {
+        transform: rotate(45deg);
+        box-shadow: 0 0 0 $text-color-primary;
+      }
+
+      &::after {
+        transform: rotate(-45deg);
+      }
+    }
+  }
+
+  &__menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+    &.active {
+      display: block;
+    }
+  }
 
   &__list {
     list-style: none;
     padding: 0;
     margin: 0;
     display: flex;
-    justify-content: center;
-    gap: 20px;
-
-    li {
-      display: flex;
-      align-items: center;
-    }
+    flex-direction: column;
+    gap: 10px;
   }
 
   &__link {
-    font-family: $font-family-base;
-    font-size: $font-size-medium;
+    display: block;
+    padding: 10px;
     color: $text-color-primary;
     text-decoration: none;
-    padding: 8px 16px;
-    cursor: pointer;
     transition: all 0.3s ease;
 
     &:hover {
-      color: $text-color-secondary;
+      background: rgba(0, 0, 0, 0.05);
     }
 
     &.active {
-      font-weight: $font-weight-bold;
+      background: rgba(0, 0, 0, 0.1);
+      font-weight: bold;
     }
   }
 }
+
+// .navigation {
+//   padding: 1rem;
+//   background-color: #fdf6f6;
+//   border-bottom: 1px solid #f5c3c3;
+//   position: relative;
+
+//   &__list {
+//     list-style: none;
+//     padding: 0;
+//     margin: 0;
+//     display: flex;
+//     justify-content: center;
+//     gap: 20px;
+
+//     li {
+//       display: flex;
+//       align-items: center;
+//     }
+
+//     @media (max-width: 768px) {
+//       display: none;
+//       position: fixed;
+//       top: 60px;
+//       left: 0;
+//       right: 0;
+//       background: #fdf6f6;
+//       padding: 20px;
+//       box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+//       z-index: 1000;
+
+//       &.active {
+//         display: flex;
+//         flex-direction: column;
+//         align-items: center;
+//         gap: 15px;
+//       }
+//     }
+//   }
+
+//   &__link {
+//     font-family: $font-family-base;
+//     font-size: $font-size-medium;
+//     color: $text-color-primary;
+//     text-decoration: none;
+//     padding: 8px 16px;
+//     cursor: pointer;
+//     transition: all 0.3s ease;
+
+//     &:hover {
+//       color: $text-color-secondary;
+//     }
+
+//     &.active {
+//       font-weight: $font-weight-bold;
+//     }
+//   }
+// }
+
+// .burger-btn {
+//   position: fixed;
+//   top: 15px;
+//   right: 15px;
+//   width: 30px;
+//   height: 30px;
+//   padding: 5px;
+//   background: none;
+//   border: none;
+//   cursor: pointer;
+//   z-index: 1001;
+
+//   @media (min-width: 769px) {
+//     display: none;
+//   }
+
+//   &__line {
+//     display: block;
+//     width: 100%;
+//     height: 3px;
+//     background-color: #000;
+//     margin: 5px 0;
+//     transition: 0.3s;
+//     border-radius: 3px;
+//   }
+
+//   &.active {
+//     .burger-btn__line {
+//       &:nth-child(1) {
+//         transform: rotate(45deg) translate(6px, 6px);
+//       }
+//       &:nth-child(2) {
+//         opacity: 0;
+//       }
+//       &:nth-child(3) {
+//         transform: rotate(-45deg) translate(6px, -6px);
+//       }
+//     }
+//   }
+// }
+
+// @media (max-width: 768px) {
+//   .navigation__link {
+//     font-size: 18px;
+//     padding: 10px 20px;
+//     width: 100%;
+//     text-align: center;
+
+//     &:hover {
+//       background-color: rgba(0, 0, 0, 0.05);
+//     }
+
+//     &.active {
+//       background-color: rgba(0, 0, 0, 0.1);
+//     }
+//   }
+// }

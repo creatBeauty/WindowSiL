@@ -12,23 +12,31 @@
     </header>
 
     <nav class="navigation">
-      <ul class="navigation__list">
-        <li><a data-page="home" class="navigation__link">Главная</a></li>
-        <li>
-          <a data-page="calculator" class="navigation__link">Калькулятор</a>
-        </li>
-        <li>
-          <a data-page="stone-selection" class="navigation__link"
-            >Выберите камень</a
-          >
-        </li>
-        <li><a data-page="cart" class="navigation__link">Корзина</a></li>
-        <li>
-          <a data-page="drawing" class="navigation__link">Чертеж подоконника</a>
-        </li>
-        <li><a data-page="cutting" class="navigation__link">Раскрой</a></li>
-        <li><a data-page="contacts" class="navigation__link">Контакты</a></li>
-      </ul>
+      <!-- Кнопка бургера только для открытия/закрытия -->
+      <div class="burger-btn" aria-label="Меню"></div>
+
+      <!-- Само меню отдельно -->
+      <div class="navigation__menu">
+        <ul class="navigation__list">
+          <li><a data-page="home" class="navigation__link">Главная</a></li>
+          <li>
+            <a data-page="calculator" class="navigation__link">Калькулятор</a>
+          </li>
+          <li>
+            <a data-page="stone-selection" class="navigation__link"
+              >Выберите камень</a
+            >
+          </li>
+          <li><a data-page="cart" class="navigation__link">Корзина</a></li>
+          <li>
+            <a data-page="drawing" class="navigation__link"
+              >Чертеж подоконника</a
+            >
+          </li>
+          <li><a data-page="cutting" class="navigation__link">Раскрой</a></li>
+          <li><a data-page="contacts" class="navigation__link">Контакты</a></li>
+        </ul>
+      </div>
     </nav>
 
     <main>
@@ -42,21 +50,18 @@
       </section>
 
       <section id="calculator" class="page calculator">
-        Калькулятор
         <div>
           <img src="./src/assets/images/mobile/Калькулятор.png" alt="" />
         </div>
       </section>
 
       <section id="stone-selection" class="page stone-selection">
-        Выберите камень
         <div>
           <img src="./src/assets/images/mobile/Выбрать камень.png" alt="" />
         </div>
       </section>
 
       <section id="cart" class="page cart">
-        Корзина
         <div><img src="./src/assets/images/mobile/Корзина.png" alt="" /></div>
       </section>
 
