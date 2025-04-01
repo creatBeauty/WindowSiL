@@ -58,7 +58,11 @@ function initBurgerMenu() {
   const navMenu = document.querySelector('.navigation__menu');
 
   if (burgerBtn && navMenu) {
+    // Добавляем логи для отладки
+    console.log('Burger button found:', burgerBtn);
+
     burgerBtn.addEventListener('click', () => {
+      console.log('Burger clicked'); // проверяем клик
       burgerBtn.classList.toggle('active');
       navMenu.classList.toggle('active');
     });
@@ -72,3 +76,6 @@ function initBurgerMenu() {
     });
   }
 }
+
+// Убедимся, что скрипт запускается после загрузки DOM
+document.addEventListener('DOMContentLoaded', initBurgerMenu);

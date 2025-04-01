@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: "MV Crooker";
   src: url("../assets/fonts/MV-Crooker.otf") format("opentype");
@@ -7,10 +8,11 @@
 }
 .header {
   padding: 20px;
-  background-color: #fdf6f6;
+  background-color: #1b1818;
   border-bottom: 1px solid #f5c3c3;
   text-align: center;
   height: 30px;
+  width: 370px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -26,55 +28,34 @@
   position: relative;
 }
 .navigation .burger-btn {
-  width: 55px;
-  height: 50px;
-  border: 3px solid #866e6e;
-  border-radius: 10px;
-  background: #fff;
   position: absolute;
-  top: 22px;
-  right: 22px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
-  z-index: 100;
+  top: 20px;
+  right: -14px;
+  z-index: 1000;
 }
-.navigation .burger-btn::before {
-  content: "";
-  position: absolute;
-  width: 30px;
-  height: 4px;
-  background: #866e6e;
-  transform: translateY(-10px);
-  box-shadow: 0 10px 0 #866e6e;
-  transition: all 0.3s ease;
-}
-.navigation .burger-btn::after {
-  content: "";
-  position: absolute;
-  width: 30px;
-  height: 4px;
-  background: #866e6e;
-  transform: translateY(10px);
-  transition: all 0.3s ease;
+.navigation .burger-btn.active span {
+  opacity: 0;
 }
 .navigation .burger-btn.active::before {
   transform: rotate(45deg);
-  box-shadow: 0 0 0 #866e6e;
 }
 .navigation .burger-btn.active::after {
   transform: rotate(-45deg);
 }
 .navigation__menu {
   display: none;
-  position: absolute;
-  top: 100%;
+  position: fixed;
+  top: 80px;
   left: 0;
   right: 0;
+  width: 80%;
+  max-width: 300px;
+  margin: 0 auto;
   background: #fff;
   padding: 20px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 999;
+  border-radius: 10px;
 }
 .navigation__menu.active {
   display: block;
@@ -89,10 +70,11 @@
 }
 .navigation__link {
   display: block;
-  padding: 10px;
+  padding: 15px;
   color: #866e6e;
   text-decoration: none;
   transition: all 0.3s ease;
+  text-align: center;
 }
 .navigation__link:hover {
   background: rgba(0, 0, 0, 0.05);
@@ -100,6 +82,67 @@
 .navigation__link.active {
   background: rgba(0, 0, 0, 0.1);
   font-weight: bold;
+}
+
+#home {
+  width: 370px;
+  height: 2200px;
+  overflow-y: auto;
+  background-image: url("../assets/images/mobile/Вся главная страница мобильник.png");
+  background-size: 100% auto;
+  background-position: top center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+#calculator {
+  width: 370px;
+  background-image: url("../assets/images/mobile/Калькулятор.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.burger-btn {
+  width: 65px;
+  height: 60px;
+  border: 3px solid #866e6e;
+  border-radius: 10px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.burger-btn::before, .burger-btn::after,
+.burger-btn span {
+  content: "";
+  display: block;
+  width: 30px;
+  height: 3px;
+  background-color: #866e6e;
+  position: absolute;
+  transition: all 0.3s ease-in-out;
+  transform-origin: center;
+}
+.burger-btn span {
+  margin: 0;
+  transform: translateY(0);
+}
+.burger-btn::before {
+  transform: translateY(-10px);
+}
+.burger-btn::after {
+  transform: translateY(10px);
+}
+.burger-btn.active span {
+  transform: scale(0);
+}
+.burger-btn.active::before {
+  transform: translateY(0) rotate(45deg);
+}
+.burger-btn.active::after {
+  transform: translateY(0) rotate(-45deg);
 }
 
 * {
@@ -111,8 +154,8 @@
 body {
   font-family: "MV Crooker", sans-serif;
   line-height: 1.5;
-  width: 100%;
-  max-width: 1200px;
+  width: 370px;
+  max-width: 370px;
   margin: 0 auto;
   padding: 0 15px;
 }
@@ -122,72 +165,4 @@ body {
 }
 .page.active {
   display: block;
-}
-
-@media (max-width: 768px) {
-  .page {
-    padding: 15px;
-  }
-}
-html {
-  font-size: 16px;
-}
-
-@media (max-width: 768px) {
-  html {
-    font-size: 14px;
-  }
-}
-img {
-  max-width: 100%;
-  height: auto;
-}
-
-table {
-  width: 100%;
-  overflow-x: auto;
-  display: block;
-}
-
-input,
-select,
-textarea {
-  width: 100%;
-  max-width: 100%;
-  padding: 10px;
-  margin-bottom: 10px;
-}
-
-.grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 20px;
-}
-
-.card {
-  padding: 15px;
-  margin-bottom: 15px;
-  border: 1px solid #ddd;
-  border-radius: 4px;
-}
-
-.header {
-  background-color: #343a40;
-  color: white;
-  padding: 1rem;
-  text-align: center;
-}
-
-.footer {
-  background-color: #343a40;
-  color: white;
-  padding: 1rem;
-  text-align: center;
-  margin-top: 2rem;
-}
-
-@media (max-width: 768px) {
-  .navigation__list {
-    flex-direction: column;
-  }
 }/*# sourceMappingURL=main.css.map */

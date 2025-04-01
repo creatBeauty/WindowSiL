@@ -1,0 +1,55 @@
+@import '../../../styles/base/variables';
+
+.burger-btn {
+  width: 65px;
+  height: 60px;
+  border: 3px solid $text-color-primary;
+  border-radius: 10px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+
+  // Полоски бургера
+  &::before,
+  &::after,
+  span {
+    content: '';
+    display: block;
+    width: 30px;
+    height: 3px;
+    background-color: $text-color-primary;
+    position: absolute;
+    transition: all 0.3s ease-in-out;
+    transform-origin: center;
+  }
+
+  span {
+    margin: 0;
+    transform: translateY(0);
+  }
+
+  &::before {
+    transform: translateY(-10px);
+  }
+
+  &::after {
+    transform: translateY(10px);
+  }
+
+  // Анимация при активном состоянии
+  &.active {
+    span {
+      transform: scale(0);
+    }
+
+    &::before {
+      transform: translateY(0) rotate(45deg);
+    }
+
+    &::after {
+      transform: translateY(0) rotate(-45deg);
+    }
+  }
+}

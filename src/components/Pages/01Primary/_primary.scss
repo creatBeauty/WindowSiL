@@ -1,0 +1,12 @@
+@import '../../../styles/base/variables';
+
+#home {
+  width: $page-width;
+  height: $page-heigth;
+  overflow-y: auto;
+  background-image: url('../assets/images/mobile/Вся главная страница мобильник.png');
+  background-size: 100% auto;
+  background-position: top center;
+  background-repeat: no-repeat;
+  position: relative;
+}
