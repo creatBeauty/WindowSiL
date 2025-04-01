@@ -13,6 +13,17 @@
 
   // Полоски бургера
   &::before,
+  span {
+    content: '';
+    display: block;
+    width: 30px;
+    height: 3px;
+    background-color: $text-color-primary;
+    position: absolute;
+    transition: all 0.3s ease-in-out;
+    transform-origin: center;
+    box-shadow: 0 10px $text-color-primary;
+  }
   &::after,
   span {
     content: '';

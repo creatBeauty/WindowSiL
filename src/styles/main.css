@@ -114,7 +114,19 @@
   align-items: center;
   cursor: pointer;
 }
-.burger-btn::before, .burger-btn::after,
+.burger-btn::before,
+.burger-btn span {
+  content: "";
+  display: block;
+  width: 30px;
+  height: 3px;
+  background-color: #866e6e;
+  position: absolute;
+  transition: all 0.3s ease-in-out;
+  transform-origin: center;
+  box-shadow: 0 10px #866e6e;
+}
+.burger-btn::after,
 .burger-btn span {
   content: "";
   display: block;

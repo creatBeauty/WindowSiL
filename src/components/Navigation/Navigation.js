@@ -32,7 +32,6 @@ function showPage(pageId) {
 // Инициализация навигации
 function initNavigation() {
   const nav = document.querySelector('.navigation');
-  initBurgerMenu();
 
   // Обработчик кликов
   nav.addEventListener('click', (e) => {
@@ -50,19 +49,23 @@ function initNavigation() {
   showPage('home');
 }
 
-// Запускаем навигацию
-initNavigation();
+// Запускаем всё после загрузки DOM
+document.addEventListener('DOMContentLoaded', () => {
+  initNavigation();
+  initBurgerMenu();
+});
 
 function initBurgerMenu() {
   const burgerBtn = document.querySelector('.burger-btn');
   const navMenu = document.querySelector('.navigation__menu');
 
   if (burgerBtn && navMenu) {
-    // Добавляем логи для отладки
-    console.log('Burger button found:', burgerBtn);
+    console.log('Burger button found:', burgerBtn); // для отладки
 
-    burgerBtn.addEventListener('click', () => {
-      console.log('Burger clicked'); // проверяем клик
+    // Единственный обработчик клика для бургер-кнопки
+    burgerBtn.addEventListener('click', (e) => {
+      e.stopPropagation(); // предотвращаем всплытие события
+      console.log('Burger clicked'); // для отладки
       burgerBtn.classList.toggle('active');
       navMenu.classList.toggle('active');
     });
@@ -74,8 +77,16 @@ function initBurgerMenu() {
         navMenu.classList.remove('active');
       }
     });
+
+    // Закрываем меню при клике вне его
+    document.addEventListener('click', (e) => {
+      if (
+        !e.target.closest('.navigation__menu') &&
+        !e.target.closest('.burger-btn')
+      ) {
+        burgerBtn.classList.remove('active');
+        navMenu.classList.remove('active');
+      }
+    });
   }
 }
-
-// Убедимся, что скрипт запускается после загрузки DOM
-document.addEventListener('DOMContentLoaded', initBurgerMenu);
