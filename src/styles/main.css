@@ -85,10 +85,10 @@
 }
 
 #home {
+  background-image: url("../assets/images/mobile/Вся главная страница мобильник.png");
   width: 370px;
   height: 2200px;
   overflow-y: auto;
-  background-image: url("../assets/images/mobile/Вся главная страница мобильник.png");
   background-size: 100% auto;
   background-position: top center;
   background-repeat: no-repeat;
@@ -96,11 +96,36 @@
 }
 
 #calculator {
-  width: 370px;
   background-image: url("../assets/images/mobile/Калькулятор.png");
-  background-size: cover;
-  background-position: center;
+  width: 370px;
+  height: 100vh;
+  overflow-y: auto;
+  background-size: 100% auto;
+  background-position: top center;
   background-repeat: no-repeat;
+  position: relative;
+}
+
+#stone-selection {
+  background-image: url("../assets/images/mobile/Выбрать камень.png");
+  width: 370px;
+  height: 4000px;
+  overflow-y: auto;
+  background-size: 100% auto;
+  background-position: top center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+#cart {
+  background-image: url("../assets/images/mobile/Корзина.png");
+  width: 370px;
+  height: 1100px;
+  overflow-y: auto;
+  background-size: 100% auto;
+  background-position: top center;
+  background-repeat: no-repeat;
+  position: relative;
 }
 
 .burger-btn {
