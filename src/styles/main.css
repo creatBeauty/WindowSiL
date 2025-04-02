@@ -12,7 +12,7 @@
   border-bottom: 1px solid #f5c3c3;
   text-align: center;
   height: 30px;
-  width: 350px;
+  width: 320px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -86,7 +86,7 @@
 
 #home {
   background-image: url("../assets/images/mobile/Вся главная страница мобильник4.webp");
-  width: 350px;
+  width: 320px;
   height: 2100px;
   overflow-y: hidden;
   background-size: 100% auto;
@@ -151,7 +151,7 @@
 
 #calculator {
   background-image: url("../assets/images/mobile/Калькулятор4 .webp");
-  width: 350px;
+  width: 320px;
   height: 100vh;
   overflow-y: hidden;
   background-size: 100% auto;
@@ -163,9 +163,8 @@
 .btn-calculator {
   display: flex;
   justify-content: center;
-  margin-top: 450px;
-  margin-left: 20px;
-  height: 80px;
+  margin-top: 400px;
+  height: 60px;
   width: 300px;
   border-radius: 15px;
   background-color: rgb(204, 138, 71);
@@ -192,9 +191,8 @@
 .btn-calculator2 {
   display: flex;
   justify-content: center;
-  margin-top: 30px;
-  margin-left: 20px;
-  height: 80px;
+  margin-top: 10px;
+  height: 60px;
   width: 300px;
   border-radius: 15px;
   background-color: rgb(204, 138, 71);
@@ -220,7 +218,7 @@
 
 #stone-selection {
   background-image: url("../assets/images/mobile/Выбрать камень.png");
-  width: 350px;
+  width: 320px;
   height: 4000px;
   overflow-y: auto;
   background-size: 100% auto;
@@ -231,7 +229,7 @@
 
 #cart {
   background-image: url("../assets/images/mobile/Корзина.png");
-  width: 350px;
+  width: 320px;
   height: 1100px;
   overflow-y: auto;
   background-size: 100% auto;
@@ -303,8 +301,8 @@
 body {
   font-family: "MV Crooker", sans-serif;
   line-height: 1.5;
-  width: 350px;
-  max-width: 350px;
+  width: 320px;
+  max-width: 320px;
   margin: 0 auto;
   padding: 0 15px;
 }
