@@ -85,10 +85,10 @@
 }
 
 #home {
-  background-image: url("../assets/images/mobile/Вся главная страница мобильник.png");
+  background-image: url("../assets/images/mobile/Вся главная страница мобильник4.webp");
   width: 350px;
-  height: 2200px;
-  overflow-y: auto;
+  height: 2100px;
+  overflow-y: hidden;
   background-size: 100% auto;
   background-position: top center;
   background-repeat: no-repeat;
@@ -119,15 +119,103 @@
   margin-left: 10px;
 }
 
+.btn-great {
+  display: flex;
+  justify-content: center;
+  margin-top: 450px;
+  margin-left: 80px;
+  margin-bottom: 880px;
+  height: 60px;
+  width: 200px;
+  border-radius: 15px;
+  background-color: rgb(204, 138, 71);
+}
+.btn-great:hover {
+  background-color: rgb(136, 91, 46);
+  transform: scale(1.1);
+}
+.btn-great .btn-great-order {
+  margin: 5px;
+  background-color: rgb(204, 138, 71);
+  border-radius: 15px;
+  border: 4px dashed #866e6e;
+  font-size: 20px;
+  padding: 7px;
+  color: #ffffff;
+  font-family: "MV Crooker", sans-serif;
+  font-weight: 100;
+}
+.btn-great .btn-great-order:hover {
+  background-color: rgb(136, 91, 46);
+}
+
 #calculator {
-  background-image: url("../assets/images/mobile/Калькулятор.png");
+  background-image: url("../assets/images/mobile/Калькулятор4 .webp");
   width: 350px;
   height: 100vh;
-  overflow-y: auto;
+  overflow-y: hidden;
   background-size: 100% auto;
   background-position: top center;
   background-repeat: no-repeat;
   position: relative;
+}
+
+.btn-calculator {
+  display: flex;
+  justify-content: center;
+  margin-top: 450px;
+  margin-left: 20px;
+  height: 80px;
+  width: 300px;
+  border-radius: 15px;
+  background-color: rgb(204, 138, 71);
+}
+.btn-calculator:hover {
+  background-color: rgb(136, 91, 46);
+  transform: scale(1.1);
+}
+.btn-calculator .btn-calculator-order {
+  margin: 5px;
+  background-color: rgb(204, 138, 71);
+  border-radius: 15px;
+  border: 4px dashed #866e6e;
+  font-size: 20px;
+  padding: 7px;
+  color: #ffffff;
+  font-family: "MV Crooker", sans-serif;
+  font-weight: 100;
+}
+.btn-calculator .btn-calculator-order:hover {
+  background-color: rgb(136, 91, 46);
+}
+
+.btn-calculator2 {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  margin-left: 20px;
+  height: 80px;
+  width: 300px;
+  border-radius: 15px;
+  background-color: rgb(204, 138, 71);
+}
+.btn-calculator2:hover {
+  background-color: rgb(136, 91, 46);
+  transform: scale(1.1);
+}
+.btn-calculator2 .btn-calculator-order {
+  margin: 5px;
+  background-color: rgb(204, 138, 71);
+  border-radius: 15px;
+  border: 4px dashed #866e6e;
+  font-size: 20px;
+  padding: 7px;
+  color: #ffffff;
+  font-family: "MV Crooker", sans-serif;
+  font-weight: 100;
+}
+.btn-calculator2 .btn-calculator-order:hover {
+  background-color: rgb(136, 91, 46);
 }
 
 #stone-selection {

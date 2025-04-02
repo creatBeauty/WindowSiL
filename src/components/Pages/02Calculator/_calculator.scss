@@ -1,12 +1,76 @@
 @import '../../../styles/base/variables';
 
 #calculator {
-  background-image: url('../assets/images/mobile/Калькулятор.png');
+  background-image: url('../assets/images/mobile/Калькулятор4 .webp');
   width: $page-width;
   height: 100vh;
-  overflow-y: auto;
+  overflow-y: hidden;
   background-size: 100% auto;
   background-position: top center;
   background-repeat: no-repeat;
   position: relative;
+}
+.btn-calculator {
+  display: flex;
+  justify-content: center;
+  margin-top: 450px;
+  margin-left: 20px;
+  height: 80px;
+
+  width: 300px;
+  border-radius: 15px;
+
+  background-color: $button-background-color;
+  &:hover {
+    background-color: $button-background-color-hover;
+    transform: scale(1.1);
+  }
+
+  .btn-calculator-order {
+    margin: 5px;
+
+    background-color: $button-background-color;
+    border-radius: 15px;
+    border: 4px dashed $text-color-primary;
+    font-size: 20px;
+    padding: 7px;
+    color: $text-color-light;
+    font-family: $font-family-base;
+    font-weight: 100;
+    &:hover {
+      background-color: $button-background-color-hover;
+    }
+  }
+}
+.btn-calculator2 {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  margin-left: 20px;
+  height: 80px;
+
+  width: 300px;
+  border-radius: 15px;
+
+  background-color: $button-background-color;
+  &:hover {
+    background-color: $button-background-color-hover;
+    transform: scale(1.1);
+  }
+
+  .btn-calculator-order {
+    margin: 5px;
+
+    background-color: $button-background-color;
+    border-radius: 15px;
+    border: 4px dashed $text-color-primary;
+    font-size: 20px;
+    padding: 7px;
+    color: $text-color-light;
+    font-family: $font-family-base;
+    font-weight: 100;
+    &:hover {
+      background-color: $button-background-color-hover;
+    }
+  }
 }
