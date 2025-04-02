@@ -11,3 +11,29 @@
   background-repeat: no-repeat;
   position: relative;
 }
+
+.header-contact {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  margin-top: 30px;
+  margin-left: 10px;
+
+  a {
+    font-size: 20px;
+    text-decoration: none;
+    color: $text-color-primary;
+  }
+
+  .whatsapp-icon {
+    width: 24px;
+    height: auto;
+    margin-left: 10px;
+    margin-right: -5px;
+  }
+  .telegram-icon {
+    width: 24px;
+    height: auto;
+    margin-left: 10px;
+  }
+}
