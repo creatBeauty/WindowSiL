@@ -18,6 +18,7 @@
   align-items: center;
   margin-top: 30px;
   margin-left: 10px;
+  margin-bottom: 370px;
 
   a {
     font-size: 20px;
@@ -35,38 +36,5 @@
     width: 24px;
     height: auto;
     margin-left: 10px;
-  }
-}
-.btn-great {
-  display: flex;
-  justify-content: center;
-  margin-top: 450px;
-  margin-left: 80px;
-  margin-bottom: 880px;
-  height: 60px;
-
-  width: 200px;
-  border-radius: 15px;
-
-  background-color: $button-background-color;
-  &:hover {
-    background-color: $button-background-color-hover;
-    transform: scale(1.1);
-  }
-
-  .btn-great-order {
-    margin: 5px;
-
-    background-color: $button-background-color;
-    border-radius: 15px;
-    border: 4px dashed $text-color-primary;
-    font-size: 20px;
-    padding: 7px;
-    color: $text-color-light;
-    font-family: $font-family-base;
-    font-weight: 100;
-    &:hover {
-      background-color: $button-background-color-hover;
-    }
   }
 }

@@ -57,6 +57,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 function initBurgerMenu() {
   const burgerBtn = document.querySelector('.burger-btn');
+  const burgerBtnSesond = document.querySelector('.burger-btn-second');
   const navMenu = document.querySelector('.navigation__menu');
 
   if (burgerBtn && navMenu) {
@@ -67,6 +68,7 @@ function initBurgerMenu() {
       e.stopPropagation(); // предотвращаем всплытие события
       console.log('Burger clicked'); // для отладки
       burgerBtn.classList.toggle('active');
+
       navMenu.classList.toggle('active');
     });
 
@@ -74,6 +76,7 @@ function initBurgerMenu() {
     navMenu.addEventListener('click', (e) => {
       if (e.target.closest('.navigation__link')) {
         burgerBtn.classList.remove('active');
+
         navMenu.classList.remove('active');
       }
     });
@@ -85,6 +88,7 @@ function initBurgerMenu() {
         !e.target.closest('.burger-btn')
       ) {
         burgerBtn.classList.remove('active');
+
         navMenu.classList.remove('active');
       }
     });

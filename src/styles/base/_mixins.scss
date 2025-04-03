@@ -1,0 +1,36 @@
+@import '../base/variables';
+
+@mixin button-styles($button-class, $width, $margin) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  width: $width;
+  border-radius: 15px;
+  background-color: $button-background-color;
+  margin: $margin;
+
+  &:hover {
+    background-color: $button-background-color-hover;
+    transform: scale(1.1);
+    .#{$button-class} {
+      background-color: $button-background-color-hover;
+    }
+  }
+
+  .#{$button-class} {
+    margin: 5px;
+    background-color: $button-background-color;
+    border: 4px dashed $text-color-primary;
+    border-radius: 15px;
+    font-size: 20px;
+    padding: 7px;
+    color: $text-color-light;
+    font-family: $font-family-base;
+    font-weight: 100;
+
+    &:hover {
+      background-color: $button-background-color-hover;
+    }
+  }
+}
