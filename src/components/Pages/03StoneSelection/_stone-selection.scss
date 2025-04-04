@@ -17,4 +17,49 @@
     font-size: 30px;
     width: 100px;
   }
+  .array-stones {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .grid-element {
+    display: flex; /* Используем Flexbox для расположения элементов */
+    align-items: center; /* Центруем элементы по вертикали */
+    justify-content: center;
+    padding: 0px; /* Отступы для кнопки */
+    border: 3px solid $button-background-color; /* Граница кнопки */
+    border-radius: 20px;
+    cursor: pointer; /* Курсор указателя при наведении */
+    background-color: $text-color-secondary; /* Фон кнопки */
+    width: 90%;
+    margin: 10px;
+    &:hover {
+      background-color: rgb(69, 83, 96);
+    }
+    .button-image {
+      width: 100px; /* Ограничение высоты изображения */
+      border-radius: 17px;
+      margin-right: auto;
+      float: left;
+    }
+
+    .details {
+      display: flex;
+      flex-direction: column; /* Распределение текста по вертикали */
+      .price {
+        display: flex;
+        flex-direction: column;
+        margin: 5px;
+        .info-stones {
+          color: $text-color-light;
+        }
+      }
+    }
+
+    .button-description {
+      margin-top: 5px; /* Отступ сверху для описания */
+      color: #555; /* Цвет текста описания */
+    }
+  }
 }

@@ -182,6 +182,49 @@
   font-size: 30px;
   width: 100px;
 }
+#stone-selection .array-stones {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#stone-selection .grid-element {
+  display: flex; /* Используем Flexbox для расположения элементов */
+  align-items: center; /* Центруем элементы по вертикали */
+  justify-content: center;
+  padding: 0px; /* Отступы для кнопки */
+  border: 3px solid rgb(204, 138, 71); /* Граница кнопки */
+  border-radius: 20px;
+  cursor: pointer; /* Курсор указателя при наведении */
+  background-color: #585f73; /* Фон кнопки */
+  width: 90%;
+  margin: 10px;
+}
+#stone-selection .grid-element:hover {
+  background-color: rgb(69, 83, 96);
+}
+#stone-selection .grid-element .button-image {
+  width: 100px; /* Ограничение высоты изображения */
+  border-radius: 17px;
+  margin-right: auto;
+  float: left;
+}
+#stone-selection .grid-element .details {
+  display: flex;
+  flex-direction: column; /* Распределение текста по вертикали */
+}
+#stone-selection .grid-element .details .price {
+  display: flex;
+  flex-direction: column;
+  margin: 5px;
+}
+#stone-selection .grid-element .details .price .info-stones {
+  color: #ffffff;
+}
+#stone-selection .grid-element .button-description {
+  margin-top: 5px; /* Отступ сверху для описания */
+  color: #555; /* Цвет текста описания */
+}
 
 .burger-btn {
   width: 65px;
@@ -284,6 +327,41 @@
   font-weight: 100;
 }
 .btn-choice .btn-calculator .btn-calculator-order:hover {
+  background-color: rgb(136, 91, 46);
+}
+
+.btn-confirmation-stone {
+  position: fixed;
+  bottom: 30px;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  width: 200px;
+  border-radius: 15px;
+  background-color: rgb(204, 138, 71);
+  margin: 10px auto 10px auto;
+}
+.btn-confirmation-stone:hover {
+  background-color: rgb(136, 91, 46);
+  transform: scale(1.1);
+}
+.btn-confirmation-stone:hover .confirmation-stone-selection {
+  background-color: rgb(136, 91, 46);
+}
+.btn-confirmation-stone .confirmation-stone-selection {
+  margin: 5px;
+  background-color: rgb(204, 138, 71);
+  border: 4px dashed #866e6e;
+  border-radius: 15px;
+  font-size: 20px;
+  padding: 7px;
+  color: #ffffff;
+  font-family: "MV Crooker", sans-serif;
+  font-weight: 100;
+}
+.btn-confirmation-stone .confirmation-stone-selection:hover {
   background-color: rgb(136, 91, 46);
 }
 

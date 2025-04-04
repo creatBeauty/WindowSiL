@@ -60,3 +60,15 @@
     @include button-styles('btn-calculator-order', 300px, 15px auto, 20px);
   }
 }
+//Третья страница,кнопки
+.btn-confirmation-stone {
+  position: fixed;
+  bottom: 30px;
+  z-index: 10;
+  @include button-styles(
+    'confirmation-stone-selection',
+    200px,
+    10px auto 10px auto,
+    20px
+  );
+}
