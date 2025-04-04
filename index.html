@@ -48,11 +48,6 @@
             alt="WhatsApp"
             class="whatsapp-icon"
           />
-          <img
-            src="./src/assets/images/mobile/telegram_cxyzka2if3cr.svg"
-            alt="WhatsApp"
-            class="telegram-icon"
-          />
         </div>
         <div class="btn-great">
           <button class="btn-great-order">Создать заказ</button>
@@ -63,29 +58,43 @@
       </section>
 
       <section id="calculator" class="page calculator">
-        <div>
-          <div>Длина</div>
-          <input type="button" />
+        <div class="stone-selection-name">. . .</div>
+        <div class="data-size">
+          <div class="data-lendth data-size-input">
+            <label for="data-lendth-input">Длина:</label>
+            <input type="text" class="data-lendth-input data-input-border" />
+          </div>
+          <div class="data-width data-size-input">
+            <label for="data-width-input data-size-input">Ширина:</label>
+            <input type="text" class="data-width-input data-input-border" />
+          </div>
+          <div class="data-thickness data-size-input">
+            <label for="data-thickness-input data-size-input">Толщина:</label>
+            <select class="data-thickness-input data-input-border">
+              <option value="12">12</option>
+              <option value="25">25</option>
+              <option value="30">30</option>
+              <option value="40">40</option>
+            </select>
+          </div>
         </div>
         <div class="btn-choice">
           <div class="btn-calculator">
             <button class="btn-calculator-order">Шаг1.Выбрать камень</button>
           </div>
-          <div class="btn-calculator2">
+          <div class="btn-calculator">
             <button class="btn-calculator-order">
               Шаг2.Добавить в корзину
             </button>
           </div>
-          <div class="btn-calculator2">
+          <div class="btn-calculator">
             <button class="btn-calculator-order">Шаг3.Перейти в корзину</button>
           </div>
         </div>
       </section>
 
       <section id="stone-selection" class="page stone-selection">
-        <div>
-          <!-- <img src="./src/assets/images/mobile/Выбрать камень.png" alt="" /> -->
-        </div>
+        <div class="txt-choose-a-color">Выберите цвет</div>
       </section>
 
       <section id="cart" class="page cart">

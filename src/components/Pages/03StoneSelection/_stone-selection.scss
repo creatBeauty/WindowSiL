@@ -1,7 +1,7 @@
 @import '../../../styles/base/variables';
 
 #stone-selection {
-  background-image: url('../assets/images/mobile/Выбрать камень.png');
+  background: $text-color-secondary;
   width: $page-width;
   height: 4000px;
   overflow-y: auto;
@@ -9,4 +9,12 @@
   background-position: top center;
   background-repeat: no-repeat;
   position: relative;
+  .txt-choose-a-color {
+    color: $text-color-light;
+    font-family: $font-family-base;
+    text-align: center;
+    margin: 10px 30px;
+    font-size: 30px;
+    width: 100px;
+  }
 }

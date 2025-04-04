@@ -48,6 +48,15 @@
   }
 }
 
+//Первая страница,кнопки
 .btn-great {
-  @include button-styles('btn-great-order', 200px, 10px auto 850px auto);
+  @include button-styles('btn-great-order', 200px, 10px auto 850px auto, 20px);
+}
+
+//Вторая страница,кнопки
+.btn-choice {
+  margin-top: 10px;
+  .btn-calculator {
+    @include button-styles('btn-calculator-order', 300px, 15px auto, 20px);
+  }
 }

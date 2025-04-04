@@ -1,6 +1,6 @@
 @import '../base/variables';
 
-@mixin button-styles($button-class, $width, $margin) {
+@mixin button-styles($button-class, $width, $margin, $font-size) {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -23,7 +23,7 @@
     background-color: $button-background-color;
     border: 4px dashed $text-color-primary;
     border-radius: 15px;
-    font-size: 20px;
+    font-size: $font-size;
     padding: 7px;
     color: $text-color-light;
     font-family: $font-family-base;

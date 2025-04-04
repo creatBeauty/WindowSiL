@@ -121,7 +121,7 @@
 }
 
 #calculator {
-  background-image: url("../assets/images/mobile/Калькулятор4 .webp");
+  background-image: url("../assets/images/mobile/Калькулятор44.webp");
   width: 320px;
   height: 100vh;
   overflow-y: hidden;
@@ -131,71 +131,41 @@
   position: relative;
 }
 
-.btn-calculator {
+.stone-selection-name {
+  margin-top: 230px;
   display: flex;
   justify-content: center;
-  margin-top: 410px;
-  height: 40px;
-  width: 250px;
-  border-radius: 15px;
-  background-color: rgb(204, 138, 71);
-}
-.btn-calculator:hover {
-  background-color: rgb(136, 91, 46);
-  transform: scale(1.1);
-}
-.btn-calculator .btn-calculator-order {
-  margin: 3px;
-  background-color: rgb(204, 138, 71);
-  border-radius: 15px;
-  border: 3px dashed #866e6e;
-  font-size: 15px;
-  padding: 5px;
   color: #ffffff;
-  font-family: "MV Crooker", sans-serif;
-  font-weight: 100;
-}
-.btn-calculator .btn-calculator-order:hover {
-  background-color: rgb(136, 91, 46);
 }
 
-.btn-calculator2 {
-  display: flex;
-  justify-content: center;
-  margin-top: 10px;
-  height: 40px;
-  width: 250px;
-  border-radius: 15px;
-  background-color: rgb(204, 138, 71);
-}
-.btn-calculator2:hover {
-  background-color: rgb(136, 91, 46);
-  transform: scale(1.1);
-}
-.btn-calculator2 .btn-calculator-order {
-  margin: 5px;
-  background-color: rgb(204, 138, 71);
-  border-radius: 15px;
-  border: 3px dashed #866e6e;
-  font-size: 15px;
-  padding: 5px;
-  color: #ffffff;
-  font-family: "MV Crooker", sans-serif;
-  font-weight: 100;
-}
-.btn-calculator2 .btn-calculator-order:hover {
-  background-color: rgb(136, 91, 46);
-}
-
-.btn-choice {
+.data-size {
+  margin-top: 30px;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+}
+.data-size .data-size-input {
+  display: flex;
+  justify-content: space-between;
+  margin: 5px;
+}
+.data-size .data-size-input label {
+  font-size: 20px;
+}
+.data-size .data-input-border {
+  width: 100px;
+  height: 40px;
+  border: 2px solid #585f73;
+  border-radius: 20px;
+  background: #ffffff;
+  text-align: center;
+  font-size: 20px;
 }
 
 #stone-selection {
-  background-image: url("../assets/images/mobile/Выбрать камень.png");
+  background: #585f73;
   width: 320px;
   height: 4000px;
   overflow-y: auto;
@@ -203,6 +173,14 @@
   background-position: top center;
   background-repeat: no-repeat;
   position: relative;
+}
+#stone-selection .txt-choose-a-color {
+  color: #ffffff;
+  font-family: "MV Crooker", sans-serif;
+  text-align: center;
+  margin: 10px 30px;
+  font-size: 30px;
+  width: 100px;
 }
 
 .burger-btn {
@@ -271,6 +249,41 @@
   font-weight: 100;
 }
 .btn-great .btn-great-order:hover {
+  background-color: rgb(136, 91, 46);
+}
+
+.btn-choice {
+  margin-top: 10px;
+}
+.btn-choice .btn-calculator {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  width: 300px;
+  border-radius: 15px;
+  background-color: rgb(204, 138, 71);
+  margin: 15px auto;
+}
+.btn-choice .btn-calculator:hover {
+  background-color: rgb(136, 91, 46);
+  transform: scale(1.1);
+}
+.btn-choice .btn-calculator:hover .btn-calculator-order {
+  background-color: rgb(136, 91, 46);
+}
+.btn-choice .btn-calculator .btn-calculator-order {
+  margin: 5px;
+  background-color: rgb(204, 138, 71);
+  border: 4px dashed #866e6e;
+  border-radius: 15px;
+  font-size: 20px;
+  padding: 7px;
+  color: #ffffff;
+  font-family: "MV Crooker", sans-serif;
+  font-weight: 100;
+}
+.btn-choice .btn-calculator .btn-calculator-order:hover {
   background-color: rgb(136, 91, 46);
 }
 

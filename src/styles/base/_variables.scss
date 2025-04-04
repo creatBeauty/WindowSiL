@@ -1,6 +1,6 @@
 // Цвета текста
 $text-color-primary: #866e6e; // основной цвет текста
-$text-color-secondary: #7e6e12; // вторичный цвет текста
+$text-color-secondary: #585f73; // вторичный цвет текста
 $text-color-light: #ffffff; // светлый текст
 $button-background-color: rgb(204, 138, 71);
 $button-background-color-hover: rgb(136, 91, 46);
@@ -9,6 +9,7 @@ $button-background-color-hover: rgb(136, 91, 46);
 $font-size-small: 14px; // мелкий текст
 $font-size-medium: 16px; // основной текст
 $font-size-large: 24px; // заголовки
+$font-size: 20px;
 
 // Жирность шрифта (опционально)
 $font-weight-regular: 300;
@@ -21,3 +22,8 @@ $line-height-base: 1.5;
 $font-family-base: 'MV Crooker', sans-serif;
 $page-width: 320px;
 $page-heigth: 2100px;
+
+$button-styles: 'btn-great-order';
+$width: 200px;
+$margin: 10px;
+$font-size: 20px;
