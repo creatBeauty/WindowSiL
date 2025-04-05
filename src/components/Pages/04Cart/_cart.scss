@@ -1,7 +1,7 @@
 @import '../../../styles/base/variables';
 
 #cart {
-  background-image: url('../assets/images/mobile/Корзина.png');
+  background-image: url('../assets/images/mobile/Корзина4.webp');
   width: $page-width;
   height: 1100px;
   overflow-y: auto;
@@ -9,4 +9,44 @@
   background-position: top center;
   background-repeat: no-repeat;
   position: relative;
+}
+.cart-choose-a-color {
+  color: $text-color-light;
+  font-family: $font-family-base;
+  margin-left: 20px;
+  margin-top: 20px;
+  font-size: 30px;
+  width: 300px;
+}
+.cart-name-choose {
+  display: flex;
+  width: 90%;
+  justify-content: space-between;
+
+  margin-top: 40px;
+  margin-left: auto;
+  margin-right: auto;
+
+  div {
+    color: $text-color-light;
+    font-size: 20px;
+  }
+}
+.cart-data-choose {
+  display: flex;
+  width: 90%;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+  color: $button-background-color;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+  .cart-data-stone {
+    width: 80%;
+  }
+  .cart-data-size-order {
+    width: 80%;
+  }
 }

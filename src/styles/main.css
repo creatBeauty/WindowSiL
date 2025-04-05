@@ -226,6 +226,57 @@
   color: #555; /* Цвет текста описания */
 }
 
+#cart {
+  background-image: url("../assets/images/mobile/Корзина4.webp");
+  width: 320px;
+  height: 1100px;
+  overflow-y: auto;
+  background-size: 100% auto;
+  background-position: top center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.cart-choose-a-color {
+  color: #ffffff;
+  font-family: "MV Crooker", sans-serif;
+  margin-left: 20px;
+  margin-top: 20px;
+  font-size: 30px;
+  width: 300px;
+}
+
+.cart-name-choose {
+  display: flex;
+  width: 90%;
+  justify-content: space-between;
+  margin-top: 40px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.cart-name-choose div {
+  color: #ffffff;
+  font-size: 20px;
+}
+
+.cart-data-choose {
+  display: flex;
+  width: 90%;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+  color: rgb(204, 138, 71);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.cart-data-choose .cart-data-stone {
+  width: 80%;
+}
+.cart-data-choose .cart-data-size-order {
+  width: 80%;
+}
+
 .burger-btn {
   width: 65px;
   height: 60px;
@@ -330,7 +381,11 @@
   background-color: rgb(136, 91, 46);
 }
 
-.btn-confirmation-stone {
+.bt-confirmation-stone {
+  display: flex;
+  justify-content: center;
+}
+.bt-confirmation-stone .btn-confirmation-stone {
   position: fixed;
   bottom: 30px;
   z-index: 10;
@@ -343,14 +398,14 @@
   background-color: rgb(204, 138, 71);
   margin: 10px auto 10px auto;
 }
-.btn-confirmation-stone:hover {
+.bt-confirmation-stone .btn-confirmation-stone:hover {
   background-color: rgb(136, 91, 46);
   transform: scale(1.1);
 }
-.btn-confirmation-stone:hover .confirmation-stone-selection {
+.bt-confirmation-stone .btn-confirmation-stone:hover .confirmation-stone-selection {
   background-color: rgb(136, 91, 46);
 }
-.btn-confirmation-stone .confirmation-stone-selection {
+.bt-confirmation-stone .btn-confirmation-stone .confirmation-stone-selection {
   margin: 5px;
   background-color: rgb(204, 138, 71);
   border: 4px dashed #866e6e;
@@ -361,7 +416,39 @@
   font-family: "MV Crooker", sans-serif;
   font-weight: 100;
 }
-.btn-confirmation-stone .confirmation-stone-selection:hover {
+.bt-confirmation-stone .btn-confirmation-stone .confirmation-stone-selection:hover {
+  background-color: rgb(136, 91, 46);
+}
+
+.cost-order {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  width: 250px;
+  border-radius: 15px;
+  background-color: rgb(204, 138, 71);
+  margin: 10px auto 10px auto;
+}
+.cost-order:hover {
+  background-color: rgb(136, 91, 46);
+  transform: scale(1.1);
+}
+.cost-order:hover .btn-cost-order {
+  background-color: rgb(136, 91, 46);
+}
+.cost-order .btn-cost-order {
+  margin: 5px;
+  background-color: rgb(204, 138, 71);
+  border: 4px dashed #866e6e;
+  border-radius: 15px;
+  font-size: 20px;
+  padding: 7px;
+  color: #ffffff;
+  font-family: "MV Crooker", sans-serif;
+  font-weight: 100;
+}
+.cost-order .btn-cost-order:hover {
   background-color: rgb(136, 91, 46);
 }
 
