@@ -277,6 +277,75 @@
   width: 80%;
 }
 
+.cost-order-data-viz {
+  color: #ffffff;
+  font-size: 20px;
+  text-align: center;
+}
+
+.place-an-order {
+  text-align: center;
+  font-size: 30px;
+  color: #585f73;
+}
+
+#contact-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#contact-form .pole {
+  width: 90%;
+  height: 40px;
+  background-color: rgb(232, 209, 185);
+  border-radius: 15px;
+  margin: 5px;
+  border: none;
+  color: #ffffff;
+}
+#contact-form .pole3 {
+  height: 100px;
+}
+
+/* Стили для placeholder */
+.pole::-moz-placeholder {
+  color: white; /* Установите цвет текста на белый */
+  opacity: 1; /* Убедитесь, что текст не полупрозрачный */
+  padding-left: 20px;
+  font-size: 20px;
+}
+.pole::placeholder {
+  color: white; /* Установите цвет текста на белый */
+  opacity: 1; /* Убедитесь, что текст не полупрозрачный */
+  padding-left: 20px;
+  font-size: 20px;
+}
+
+.cart-text-bottom {
+  color: #585f73;
+}
+
+.page-drawing {
+  margin-top: 100px;
+  width: 320px;
+  height: 100vh;
+  background-image: url("../assets/images/mobile/Чертеж подоконника.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  color: #ffffff;
+}
+
+.draw {
+  margin-top: 100px;
+  width: 320px;
+  height: 100vh;
+  background-image: url("../assets/images/mobile/Чертеж подоконника.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  color: #ffffff;
+}
+
 .burger-btn {
   width: 65px;
   height: 60px;
@@ -449,6 +518,73 @@
   font-weight: 100;
 }
 .cost-order .btn-cost-order:hover {
+  background-color: rgb(136, 91, 46);
+}
+
+.info-order {
+  display: flex;
+}
+.info-order .info-order-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  width: 130px;
+  border-radius: 15px;
+  background-color: rgb(204, 138, 71);
+  margin: 10px auto 10px auto;
+}
+.info-order .info-order-btn:hover {
+  background-color: rgb(136, 91, 46);
+  transform: scale(1.1);
+}
+.info-order .info-order-btn:hover .info-order-btn-cd {
+  background-color: rgb(136, 91, 46);
+}
+.info-order .info-order-btn .info-order-btn-cd {
+  margin: 5px;
+  background-color: rgb(204, 138, 71);
+  border: 4px dashed #866e6e;
+  border-radius: 15px;
+  font-size: 17px;
+  padding: 7px;
+  color: #ffffff;
+  font-family: "MV Crooker", sans-serif;
+  font-weight: 100;
+}
+.info-order .info-order-btn .info-order-btn-cd:hover {
+  background-color: rgb(136, 91, 46);
+}
+
+.request-an-invoice {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  width: 300px;
+  border-radius: 15px;
+  background-color: rgb(204, 138, 71);
+  margin: 10px auto 10px auto;
+}
+.request-an-invoice:hover {
+  background-color: rgb(136, 91, 46);
+  transform: scale(1.1);
+}
+.request-an-invoice:hover .request-an-invoice-btn {
+  background-color: rgb(136, 91, 46);
+}
+.request-an-invoice .request-an-invoice-btn {
+  margin: 5px;
+  background-color: rgb(204, 138, 71);
+  border: 4px dashed #866e6e;
+  border-radius: 15px;
+  font-size: 15px;
+  padding: 7px;
+  color: #ffffff;
+  font-family: "MV Crooker", sans-serif;
+  font-weight: 100;
+}
+.request-an-invoice .request-an-invoice-btn:hover {
   background-color: rgb(136, 91, 46);
 }
 

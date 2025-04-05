@@ -1,12 +1,11 @@
 @import '../../../styles/base/variables';
 
-#drawing {
-  // background-image: url('../assets/images/mobile/Корзина.png');
+.draw {
+  margin-top: 100px;
   width: $page-width;
-  height: 1100px;
-  overflow-y: auto;
-  background-size: 100% auto;
-  background-position: top center;
+  height: 100vh;
+  background-image: url('../assets/images/mobile/Чертеж подоконника.png');
+  background-size: 100%;
   background-repeat: no-repeat;
-  position: relative;
+  color: $text-color-light;
 }

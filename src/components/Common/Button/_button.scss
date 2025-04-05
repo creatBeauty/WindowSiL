@@ -81,3 +81,23 @@
 .cost-order {
   @include button-styles('btn-cost-order', 250px, 10px auto 10px auto, 20px);
 }
+.info-order {
+  display: flex;
+  .info-order-btn {
+    @include button-styles(
+      'info-order-btn-cd',
+      130px,
+      10px auto 10px auto,
+      17px
+    );
+  }
+}
+
+.request-an-invoice {
+  @include button-styles(
+    'request-an-invoice-btn',
+    300px,
+    10px auto 10px auto,
+    15px
+  );
+}

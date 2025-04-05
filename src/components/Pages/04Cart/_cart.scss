@@ -50,3 +50,52 @@
     width: 80%;
   }
 }
+
+.cost-order-data-viz {
+  color: $text-color-light;
+  font-size: 20px;
+  text-align: center;
+}
+.place-an-order {
+  text-align: center;
+  font-size: 30px;
+  color: $text-color-secondary;
+}
+#contact-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  .pole {
+    width: 90%;
+    height: 40px;
+    background-color: $button2-background-color;
+    border-radius: 15px;
+    margin: 5px;
+    border: none;
+    color: $text-color-light;
+  }
+  .pole3 {
+    height: 100px;
+  }
+}
+
+/* Стили для placeholder */
+.pole::placeholder {
+  color: white; /* Установите цвет текста на белый */
+  opacity: 1; /* Убедитесь, что текст не полупрозрачный */
+  padding-left: 20px;
+  font-size: 20px;
+}
+.cart-text-bottom {
+  color: $text-color-secondary;
+}
+.page-drawing {
+  margin-top: 100px;
+  width: $page-width;
+  height: 100vh;
+  background-image: url('../assets/images/mobile/Чертеж подоконника.png');
+  background-size: 100%;
+  background-repeat: no-repeat;
+  color: $text-color-light;
+}
