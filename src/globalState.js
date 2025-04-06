@@ -2,7 +2,7 @@ const initialState = {
   lengthGlobal: 0,
   widthGlobal: 0,
   thicknessGlobal: 0,
-  selectedStoneGlobal: null,
+  selectedStoneGlobal: '',
   priceForListGlobal: 0,
   totalPriceGlobal: 0,
   quantitySheetsAfterCuttingGlobal: 0,

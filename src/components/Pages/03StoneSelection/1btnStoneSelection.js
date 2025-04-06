@@ -3,6 +3,7 @@ import { Glstate } from '../../../globalState.js';
 const stoneSelections = document.querySelectorAll('.grid-element');
 const strCalculator = document.getElementById('calculator');
 const strStoneSelection = document.getElementById('stone-selection');
+let stoneSelectionName = document.querySelector('.stone-selection-name');
 
 function stoneSelect() {
   console.log('Функция stoneSelect вызвана'); // Для отладки
@@ -28,9 +29,10 @@ function stoneSelect() {
       const price = priceText.replace(/\D/g, ''); // Извлекаем только числовое значение, убирая все ненужные символы
 
       // Присваиваем значение глобальным переменным
-      // selectedStone.value = stoneType; // Если selectedStone - это объект
-      // priceForList.value = price; // Если priceForList - это объект
-
+      Glstate.selectedStoneGlobal = stoneType;
+      Glstate.priceForListGlobal = price;
+      stoneSelectionName.style.fontFamily = 'Arial';
+      stoneSelectionName.textContent = stoneType;
       // Задержка в 1 секунду перед переключением классов
       setTimeout(() => {
         strCalculator.classList.add('active');
@@ -38,9 +40,9 @@ function stoneSelect() {
       }, 500); // 1000 миллисекунд = 1 секунда
 
       // Для вывода в консоль, если нужно следить за изменениями
-      // console.log(
-      //   `Selected Stone: ${selectedStone.value}, Price: ${priceForList.value}`
-      // );
+      console.log(
+        `Выбранный камень: ${Glstate.selectedStoneGlobal}, Стоимость: ${Glstate.priceForListGlobal}`
+      );
     });
   });
 }
