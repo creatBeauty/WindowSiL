@@ -164,6 +164,10 @@
   font-size: 20px;
 }
 
+.calck-txt {
+  color: #585f73;
+}
+
 #stone-selection {
   background: #585f73;
   width: 320px;
