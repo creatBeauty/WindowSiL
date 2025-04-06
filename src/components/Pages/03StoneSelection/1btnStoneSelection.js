@@ -1,9 +1,14 @@
-import { selectedStone, priceForList } from '../../../globalState';
+// import { selectedStone, priceForList } from '../../../globalState';
 
-const stoneSelections = document.querySelectorAll('.grid-element'); // Убедитесь, что '.grid-element' правильный селектор
+const stoneSelections = document.querySelectorAll('.grid-element');
+const strCalculator = document.getElementById('calculator');
+const strStoneSelection = document.getElementById('stone-selection');
+
 function stoneSelect() {
+  console.log('Функция stoneSelect вызвана'); // Для отладки
   stoneSelections.forEach((el) => {
     el.addEventListener('click', () => {
+      console.log('Кнопка нажата'); // Для отладки
       // Убираем выделение со всех элементов
       stoneSelections.forEach((el2) => {
         el2.classList.remove('selectedStones');
@@ -11,7 +16,7 @@ function stoneSelect() {
 
       // Добавляем выделение к выбранному элементу
       el.classList.add('selectedStones');
-      el.style.background = 'rgb(249, 101, 101)';
+      el.style.background = 'rgb(204, 138, 71)';
 
       // Извлекаем название камня
       const stoneType = el
@@ -23,17 +28,19 @@ function stoneSelect() {
       const price = priceText.replace(/\D/g, ''); // Извлекаем только числовое значение, убирая все ненужные символы
 
       // Присваиваем значение глобальным переменным
-      selectedStone.value = stoneType; // Если selectedStone - это объект
-      priceForList.value = price; // Если priceForList - это объект
+      // selectedStone.value = stoneType; // Если selectedStone - это объект
+      // priceForList.value = price; // Если priceForList - это объект
 
-      // Если selectedStone и priceForList не являются объектами
-      // selectedStone = stoneType;
-      // priceForList = price;
+      // Задержка в 1 секунду перед переключением классов
+      setTimeout(() => {
+        strCalculator.classList.add('active');
+        strStoneSelection.classList.remove('active');
+      }, 500); // 1000 миллисекунд = 1 секунда
 
       // Для вывода в консоль, если нужно следить за изменениями
-      console.log(
-        `Selected Stone: ${selectedStone.value}, Price: ${priceForList.value}`
-      );
+      // console.log(
+      //   `Selected Stone: ${selectedStone.value}, Price: ${priceForList.value}`
+      // );
     });
   });
 }

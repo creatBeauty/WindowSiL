@@ -1,13 +1,13 @@
 const initialState = {
-  length: 0,
-  width: 0,
-  thickness: 0,
-  selectedStone: null,
-  priceForList: 0,
-  totalPrice: 0,
-  quantitySheetsAfterCutting: 0,
-  basketItems: [], // Пустой массив
-  userInfo: {
+  lengthGlobal: 0,
+  widthGlobal: 0,
+  thicknessGlobal: 0,
+  selectedStoneGlobal: null,
+  priceForListGlobal: 0,
+  totalPriceGlobal: 0,
+  quantitySheetsAfterCuttingGlobal: 0,
+  basketItemsGlobal: [], // Пустой массив
+  userInfoGlobal: {
     name: '',
     email: '',
     tel: '',
