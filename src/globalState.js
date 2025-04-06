@@ -15,4 +15,4 @@ const initialState = {
 };
 
 // Используем чистое начальное состояние
-export const state = { ...initialState };
+export const Glstate = { ...initialState };

@@ -7,7 +7,9 @@
     "start": "parcel index.html",
     "build": "parcel build index.html"
   },
-  "dependencies": {},
+  "dependencies": {
+    "express": "^5.1.0"
+  },
   "devDependencies": {
     "@parcel/transformer-sass": "^2.12.0",
     "parcel": "^2.12.0"

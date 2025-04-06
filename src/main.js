@@ -1,4 +1,5 @@
 // Простой импорт функций навигации
+
 import './components/Navigation/Navigation.js';
 import greatOrder from './components/Pages/01Primary/primary.js';
 import btnGetStonesCalculator from './components/Pages/02Calculator/1calculatorGetStones.js';

@@ -1,4 +1,4 @@
-// import { selectedStone, priceForList } from '../../../globalState';
+import { Glstate } from '../../../globalState.js';
 
 const stoneSelections = document.querySelectorAll('.grid-element');
 const strCalculator = document.getElementById('calculator');
