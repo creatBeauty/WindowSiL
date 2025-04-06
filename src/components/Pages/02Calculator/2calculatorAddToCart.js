@@ -23,8 +23,25 @@ function calkAddToBasket() {
     }
 
     const currentCartData = cartWindSillTxt.textContent;
-    const newCartDataWindowSill = `${lengthInDOM.value}x${widthInDOM.value}x${thicknessInDOM.value}-${countInDOM.value}шт.`;
-    cartWindSillTxt.textContent = currentCartData + ' ' + newCartDataWindowSill;
+    const newCartDataWindowSill = {
+      dimensions: `${lengthInDOM.value}x${widthInDOM.value}x${thicknessInDOM.value}`,
+      count: countInDOM.value,
+      stone: Glstate.selectedStoneGlobal,
+    };
+
+    // Добавляем новый объект в массив
+    Glstate.basketItemsGlobal.push(newCartDataWindowSill);
+
+    // Обновляем текстовое содержимое
+    cartWindSillTxt.textContent =
+      currentCartData +
+      ' ' +
+      newCartDataWindowSill.dimensions +
+      '-' +
+      newCartDataWindowSill.count +
+      'шт.';
+    console.log(Glstate.basketItemsGlobal);
+    console.log(typeof Glstate.basketItemsGlobal);
     cartStoneTxt.textContent = Glstate.selectedStoneGlobal;
   });
 }

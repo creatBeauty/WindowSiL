@@ -6,6 +6,7 @@ import btnGetStonesCalculator from './components/Pages/02Calculator/1calculatorG
 import stoneSelect from './components/Pages/03StoneSelection/1btnStoneSelection.js';
 import btnGoToCart from './components/Pages/02Calculator/3calculatorGoToCart.js';
 import calkAddToBasket from './components/Pages/02Calculator/2calculatorAddToCart.js';
+import costOrder from './components/Pages/04Cart/Cart.js';
 
 // Функция инициализации приложения
 function initApp() {
@@ -16,6 +17,7 @@ function initApp() {
     stoneSelect();
     btnGoToCart();
     calkAddToBasket();
+    costOrder();
   } catch (error) {
     console.error('Ошибка при инициализации приложения:', error);
   }
