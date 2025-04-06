@@ -1,6 +1,6 @@
 const initialState = {
   length: 0,
-  with: 0,
+  width: 0,
   thickness: 0,
   selectedStone: null,
   priceForList: 0,

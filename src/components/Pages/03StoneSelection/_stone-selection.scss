@@ -45,16 +45,12 @@
       float: left;
     }
 
-    .details {
+    .price {
       display: flex;
-      flex-direction: column; /* Распределение текста по вертикали */
-      .price {
-        display: flex;
-        flex-direction: column;
-        margin: 5px;
-        .info-stones {
-          color: $text-color-light;
-        }
+      flex-direction: column;
+      margin: 5px;
+      .info-stones {
+        color: $text-color-light;
       }
     }
 

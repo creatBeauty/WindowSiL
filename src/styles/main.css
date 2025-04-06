@@ -209,16 +209,12 @@
   margin-right: auto;
   float: left;
 }
-#stone-selection .grid-element .details {
-  display: flex;
-  flex-direction: column; /* Распределение текста по вертикали */
-}
-#stone-selection .grid-element .details .price {
+#stone-selection .grid-element .price {
   display: flex;
   flex-direction: column;
   margin: 5px;
 }
-#stone-selection .grid-element .details .price .info-stones {
+#stone-selection .grid-element .price .info-stones {
   color: #ffffff;
 }
 #stone-selection .grid-element .button-description {
@@ -324,16 +320,6 @@
 
 .cart-text-bottom {
   color: #585f73;
-}
-
-.page-drawing {
-  margin-top: 100px;
-  width: 320px;
-  height: 100vh;
-  background-image: url("../assets/images/mobile/Чертеж подоконника.png");
-  background-size: 100%;
-  background-repeat: no-repeat;
-  color: #ffffff;
 }
 
 .draw {
