@@ -149,14 +149,14 @@
 .data-size .data-size-input {
   display: flex;
   justify-content: space-between;
-  margin: 5px;
+  margin: 3px;
 }
 .data-size .data-size-input label {
-  font-size: 20px;
+  font-size: 17px;
 }
 .data-size .data-input-border {
   width: 100px;
-  height: 40px;
+  height: 30px;
   border: 2px solid #585f73;
   border-radius: 20px;
   background: #ffffff;

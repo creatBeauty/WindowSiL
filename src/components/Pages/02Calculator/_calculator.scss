@@ -28,15 +28,15 @@
   .data-size-input {
     display: flex;
     justify-content: space-between;
-    margin: 5px;
+    margin: 3px;
 
     label {
-      font-size: 20px;
+      font-size: 17px;
     }
   }
   .data-input-border {
     width: 100px;
-    height: 40px;
+    height: 30px;
     border: 2px solid $text-color-secondary;
     border-radius: 20px;
     background: $text-color-light;
