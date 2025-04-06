@@ -12,6 +12,16 @@ let btnAddToBasket = document.querySelector('.add-to-basket');
 
 function calkAddToBasket() {
   btnAddToBasket.addEventListener('click', () => {
+    if (
+      lengthInDOM.value.trim() === '' ||
+      widthInDOM.value.trim() === '' ||
+      thicknessInDOM.value.trim() === '' ||
+      countInDOM.value.trim() === ''
+    ) {
+      alert('Заполните поля');
+      return;
+    }
+
     const currentCartData = cartWindSillTxt.textContent;
     const newCartDataWindowSill = `${lengthInDOM.value}x${widthInDOM.value}x${thicknessInDOM.value}-${countInDOM.value}шт.`;
     cartWindSillTxt.textContent = currentCartData + ' ' + newCartDataWindowSill;
