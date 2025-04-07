@@ -606,17 +606,15 @@
           <button class="btn-cost-order">Стоимость заказа</button>
         </div>
         <div class="cost-order-data-viz">
-          <span
-            class="cost-order-data-logic"
-            
-            "
-            >...</span
-          ><span> руб.</span>
+          <span class="cost-order-data-logic">...</span><span> руб.</span>
         </div>
 
         <div class="info-order">
           <div class="info-order-btn">
-            <button class="info-order-btn-cutting info-order-btn-cd">
+            <button
+              id="cartBTNtoCutting"
+              class="info-order-btn-cutting info-order-btn-cd"
+            >
               Раскрой
             </button>
           </div>
@@ -672,7 +670,11 @@
         <div class="draw"></div>
       </section>
 
-      <section id="cutting" class="page cutting">Раскрой</section>
+      <section id="cutting" class="page cutting">
+        <div class="cutting-container">
+          <div id="cuttingVisualization" class="cutting-visualization"></div>
+        </div>
+      </section>
 
       <section id="contacts" class="page contacts">Контакты</section>
     </main>

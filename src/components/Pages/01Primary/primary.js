@@ -1,14 +1,4 @@
 function greatOrder() {
-  const pages = [
-    'home',
-    'calculator',
-    'stone-selection',
-    'cart',
-    'drawing',
-    'cutting',
-    'contacts',
-  ];
-
   const home = document.getElementById('home');
   const calculator = document.getElementById('calculator');
 

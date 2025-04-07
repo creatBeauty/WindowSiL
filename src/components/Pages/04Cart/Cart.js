@@ -11,6 +11,9 @@ function costOrder() {
     const dataForCutting = prepareDataForCutting(Glstate.basketItemsGlobal);
     console.log(dataForCutting);
     const countListForOrder = createCutting(dataForCutting);
+    visualizeTiles(countListForOrder.tiles);
+
+    Glstate.quantitySheetsAfterCuttingGlobal = countListForOrder;
     console.log(countListForOrder);
     console.log(Glstate.priceForListGlobal);
     const costOfTheMaterial =

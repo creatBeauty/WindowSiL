@@ -1,12 +1,51 @@
 @import '../../../styles/base/variables';
 
 #cutting {
-  // background-image: url('../assets/images/mobile/Корзина.png');
-  width: $page-width;
-  height: 1100px;
-  overflow-y: auto;
-  background-size: 100% auto;
-  background-position: top center;
-  background-repeat: no-repeat;
-  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .sheet-container {
+    position: relative;
+    width: 760px;
+    height: 3660px;
+    min-height: 100px;
+    border: 2px solid #8e0b48;
+    background: #f5f5f5;
+    transform: scale(0.4);
+    margin-top: -170px;
+    margin-bottom: -1100px;
+
+    padding: 0;
+    top: 0;
+
+    .tile-element {
+      position: absolute;
+      background: #e3f2fd;
+      border: 2px solid #2196f3;
+      color: #2b6a2b;
+      font-size: 25px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 4px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+  }
+}
+.sheets-count {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transform: translateX(-50px);
+}
+.sheet-label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-left: 300px;
+  margin-top: 100px;
 }

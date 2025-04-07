@@ -13,6 +13,7 @@
 @import '../components/Pages/03StoneSelection/stone-selection';
 @import '../components/Pages/04Cart/cart';
 @import '../components/Pages/05Drawing/drawing';
+@import '../components/Pages/06Cutting/cutting';
 
 @import '../components/Common/Button/button';
 // Базовые стили
@@ -39,85 +40,3 @@ body {
     display: block;
   }
 }
-
-// Адаптивные отступы
-// @media (max-width: 768px) {
-//   .page {
-//     padding: 15px;
-//   }
-// }
-
-// // Адаптивная типография
-// html {
-//   font-size: 16px;
-// }
-
-// @media (max-width: 768px) {
-//   html {
-//     font-size: 14px;
-//   }
-// }
-
-// // Адаптивные изображения
-// img {
-//   max-width: 100%;
-//   height: auto;
-// }
-
-// // Адаптивные таблицы
-// table {
-//   width: 100%;
-//   overflow-x: auto;
-//   display: block;
-// }
-
-// // Адаптивные формы
-// input,
-// select,
-// textarea {
-//   width: 100%;
-//   max-width: 100%;
-//   padding: 10px;
-//   margin-bottom: 10px;
-// }
-
-// // Адаптивные сетки
-// .grid {
-//   display: grid;
-//   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-//   gap: 20px;
-// }
-
-// // Адаптивные карточки
-// .card {
-//   padding: 15px;
-//   margin-bottom: 15px;
-//   border: 1px solid #ddd;
-//   border-radius: 4px;
-// }
-
-// // Стили для хедера
-// .header {
-//   background-color: #343a40;
-//   color: white;
-//   padding: 1rem;
-//   text-align: center;
-// }
-
-// // Стили для футера
-// .footer {
-//   background-color: #343a40;
-//   color: white;
-//   padding: 1rem;
-//   text-align: center;
-//   margin-top: 2rem;
-// }
-
-// // Адаптивное меню (уже есть)
-// .navigation {
-//   @media (max-width: 768px) {
-//     &__list {
-//       flex-direction: column;
-//     }
-//   }
-// }
