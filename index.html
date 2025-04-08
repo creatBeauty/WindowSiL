@@ -5,6 +5,82 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>WindowSill - Калькулятор подоконников</title>
     <link rel="stylesheet" href="src/styles/main.css" />
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+
+    <!-- Mailjs -->
+    <script type="text/javascript">
+      (function () {
+        // https://dashboard.emailjs.com/admin/account
+        emailjs.init({
+          publicKey: 'vUFTYjStV3HcMn2iV',
+        });
+      })();
+    </script>
+
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript">
+      (function (m, e, t, r, i, k, a) {
+        m[i] =
+          m[i] ||
+          function () {
+            (m[i].a = m[i].a || []).push(arguments);
+          };
+        m[i].l = 1 * new Date();
+
+        const timeout = setTimeout(() => {
+          console.warn('Yandex Metrika failed to load (timeout)');
+          // Try alternate CDN on timeout
+          const altScript = document.createElement('script');
+          altScript.async = true;
+          altScript.src =
+            'https://cdn.jsdelivr.net/npm/yandex-metrica-watch/tag.js';
+          document.head.appendChild(altScript);
+        }, 5000);
+
+        for (var j = 0; j < document.scripts.length; j++) {
+          if (document.scripts[j].src === r) {
+            clearTimeout(timeout);
+            return;
+          }
+        }
+        (k = e.createElement(t)),
+          (a = e.getElementsByTagName(t)[0]),
+          (k.async = 1),
+          (k.src = r),
+          (k.onload = function () {
+            clearTimeout(timeout);
+          }),
+          (k.onerror = function () {
+            console.warn('Yandex Metrika failed to load');
+            clearTimeout(timeout);
+          }),
+          a.parentNode.insertBefore(k, a);
+      })(
+        window,
+        document,
+        'script',
+        'https://mc.yandex.ru/metrika/tag.js',
+        'ym'
+      );
+
+      ym(99530136, 'init', {
+        clickmap: true,
+        trackLinks: true,
+        accurateTrackBounce: true,
+      });
+    </script>
+    <noscript
+      ><div>
+        <img
+          src="https://mc.yandex.ru/watch/99530136"
+          style="position: absolute; left: -9999px"
+          alt=""
+        /></div
+    ></noscript>
+    <!-- /Yandex.Metrika counter -->
   </head>
   <body>
     <header class="header">

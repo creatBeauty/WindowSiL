@@ -11,6 +11,7 @@ import visualCutting from './components/Pages/04Cart/VisualCuttingBtn.js';
 import btngoToCartExit from './components/Pages/06Cutting/cutting.js';
 import btnVizDrawingExit from './components/Pages/05Drawing/drawing.js';
 import CartbtnVizDrawing from './components/Pages/04Cart/VisualDrawingBtn.js';
+import RequestAnInvoice from './components/Pages/04Cart/RequestAnInvoice.js';
 
 // Функция инициализации приложения
 function initApp() {
@@ -26,6 +27,7 @@ function initApp() {
     btngoToCartExit();
     btnVizDrawingExit();
     CartbtnVizDrawing();
+    RequestAnInvoice();
   } catch (error) {
     console.error('Ошибка при инициализации приложения:', error);
   }
