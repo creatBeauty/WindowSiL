@@ -21,7 +21,7 @@ function calkAddToBasket() {
       alert('Заполните поля');
       return;
     }
-
+    alert('Заказ добавлен в корзину');
     const currentCartData = cartWindSillTxt.textContent;
     const newCartDataWindowSill = {
       dimensions: `${lengthInDOM.value}x${widthInDOM.value}x${thicknessInDOM.value}`,
