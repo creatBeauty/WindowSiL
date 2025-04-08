@@ -8,6 +8,9 @@ import btnGoToCart from './components/Pages/02Calculator/3calculatorGoToCart.js'
 import calkAddToBasket from './components/Pages/02Calculator/2calculatorAddToCart.js';
 import costOrder from './components/Pages/04Cart/Cart.js';
 import visualCutting from './components/Pages/04Cart/VisualCuttingBtn.js';
+import btngoToCartExit from './components/Pages/06Cutting/cutting.js';
+import btnVizDrawingExit from './components/Pages/05Drawing/drawing.js';
+import CartbtnVizDrawing from './components/Pages/04Cart/VisualDrawingBtn.js';
 
 // Функция инициализации приложения
 function initApp() {
@@ -20,6 +23,9 @@ function initApp() {
     calkAddToBasket();
     costOrder();
     visualCutting();
+    btngoToCartExit();
+    btnVizDrawingExit();
+    CartbtnVizDrawing();
   } catch (error) {
     console.error('Ошибка при инициализации приложения:', error);
   }

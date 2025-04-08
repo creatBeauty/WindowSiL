@@ -85,3 +85,38 @@
     15px
   );
 }
+// Cтраница РАСКРОЯ,кнопки
+.btn-cut {
+  width: $page-width;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 800px; /* Расстояние от верхнего края окна */
+  right: 820px;
+  .btn-cutting {
+    @include button-styles(
+      'btn-cutting-exit',
+      200px,
+      10px auto 850px auto,
+      20px
+    );
+  }
+}
+// Cтраница ЧЕРТЕЖ,кнопка
+.btn-draw {
+  width: $page-width;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 400px; /* Расстояние от верхнего края окна */
+  right: 820px;
+  .btn-drawing {
+    @include button-styles(
+      'btn-drawing-exit',
+      200px,
+      10px auto 850px auto,
+      20px
+    );
+  }
+}

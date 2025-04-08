@@ -17,6 +17,7 @@ function visualCutting() {
   cartBTNtoCutting.addEventListener('click', () => {
     strCart.classList.remove('active');
     strCutting.classList.add('active');
+    strCutting.style.display = 'flex';
   });
   const data1 = Glstate.basketItemsGlobal;
   const data2 = prepareDataForCutting(data1);

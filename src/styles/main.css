@@ -333,7 +333,7 @@
   font-size: 30px;
 }
 
-.draw {
+#drawing {
   margin-top: 100px;
   width: 320px;
   height: 100vh;
@@ -344,7 +344,7 @@
 }
 
 #cutting {
-  display: flex;
+  display: none;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -592,6 +592,87 @@
   font-weight: 100;
 }
 .request-an-invoice .request-an-invoice-btn:hover {
+  background-color: rgb(136, 91, 46);
+}
+
+.btn-cut {
+  width: 320px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 800px; /* Расстояние от верхнего края окна */
+  right: 820px;
+}
+.btn-cut .btn-cutting {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  width: 200px;
+  border-radius: 15px;
+  background-color: rgb(204, 138, 71);
+  margin: 10px auto 850px auto;
+}
+.btn-cut .btn-cutting:hover {
+  background-color: rgb(136, 91, 46);
+  transform: scale(1.1);
+}
+.btn-cut .btn-cutting:hover .btn-cutting-exit {
+  background-color: rgb(136, 91, 46);
+}
+.btn-cut .btn-cutting .btn-cutting-exit {
+  margin: 5px;
+  background-color: rgb(204, 138, 71);
+  border: 4px dashed #866e6e;
+  border-radius: 15px;
+  font-size: 20px;
+  padding: 7px;
+  color: #ffffff;
+  font-family: "MV Crooker", sans-serif;
+  font-weight: 100;
+}
+.btn-cut .btn-cutting .btn-cutting-exit:hover {
+  background-color: rgb(136, 91, 46);
+}
+
+.btn-draw {
+  width: 320px;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 400px; /* Расстояние от верхнего края окна */
+  right: 820px;
+}
+.btn-draw .btn-drawing {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  width: 200px;
+  border-radius: 15px;
+  background-color: rgb(204, 138, 71);
+  margin: 10px auto 850px auto;
+}
+.btn-draw .btn-drawing:hover {
+  background-color: rgb(136, 91, 46);
+  transform: scale(1.1);
+}
+.btn-draw .btn-drawing:hover .btn-drawing-exit {
+  background-color: rgb(136, 91, 46);
+}
+.btn-draw .btn-drawing .btn-drawing-exit {
+  margin: 5px;
+  background-color: rgb(204, 138, 71);
+  border: 4px dashed #866e6e;
+  border-radius: 15px;
+  font-size: 20px;
+  padding: 7px;
+  color: #ffffff;
+  font-family: "MV Crooker", sans-serif;
+  font-weight: 100;
+}
+.btn-draw .btn-drawing .btn-drawing-exit:hover {
   background-color: rgb(136, 91, 46);
 }
 

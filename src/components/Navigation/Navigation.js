@@ -9,6 +9,8 @@ const pages = [
   'contacts',
 ];
 
+const stoneSelections = document.querySelectorAll('.grid-element');
+
 // Функция переключения страниц
 function showPage(pageId) {
   // Скрываем все страницы
