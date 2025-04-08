@@ -603,8 +603,8 @@
   justify-content: center;
   align-items: center;
   position: fixed;
-  top: 800px; /* Расстояние от верхнего края окна */
-  right: 820px;
+  top: 100px; /* Расстояние от верхнего края окна */
+  right: 250px;
 }
 .btn-cut .btn-cutting {
   display: flex;
@@ -638,13 +638,55 @@
   background-color: rgb(136, 91, 46);
 }
 
+@media (min-width: 768px) {
+  .btn-cut {
+    width: 320px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 100px; /* Расстояние от верхнего края окна */
+    right: 850px;
+  }
+  .btn-cut .btn-cutting {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    width: 200px;
+    border-radius: 15px;
+    background-color: rgb(204, 138, 71);
+    margin: 10px auto 850px auto;
+  }
+  .btn-cut .btn-cutting:hover {
+    background-color: rgb(136, 91, 46);
+    transform: scale(1.1);
+  }
+  .btn-cut .btn-cutting:hover .btn-cutting-exit {
+    background-color: rgb(136, 91, 46);
+  }
+  .btn-cut .btn-cutting .btn-cutting-exit {
+    margin: 5px;
+    background-color: rgb(204, 138, 71);
+    border: 4px dashed #866e6e;
+    border-radius: 15px;
+    font-size: 20px;
+    padding: 7px;
+    color: #ffffff;
+    font-family: "MV Crooker", sans-serif;
+    font-weight: 100;
+  }
+  .btn-cut .btn-cutting .btn-cutting-exit:hover {
+    background-color: rgb(136, 91, 46);
+  }
+}
 .btn-draw {
   width: 320px;
   justify-content: center;
   align-items: center;
   position: fixed;
   top: 400px; /* Расстояние от верхнего края окна */
-  right: 820px;
+  right: 20px;
 }
 .btn-draw .btn-drawing {
   display: flex;
@@ -678,6 +720,48 @@
   background-color: rgb(136, 91, 46);
 }
 
+@media (min-width: 768px) {
+  .btn-draw {
+    width: 320px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 400px; /* Расстояние от верхнего края окна */
+    right: 850px;
+  }
+  .btn-draw .btn-cutting {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    width: 200px;
+    border-radius: 15px;
+    background-color: rgb(204, 138, 71);
+    margin: 10px auto 850px auto;
+  }
+  .btn-draw .btn-cutting:hover {
+    background-color: rgb(136, 91, 46);
+    transform: scale(1.1);
+  }
+  .btn-draw .btn-cutting:hover .btn-cutting-exit {
+    background-color: rgb(136, 91, 46);
+  }
+  .btn-draw .btn-cutting .btn-cutting-exit {
+    margin: 5px;
+    background-color: rgb(204, 138, 71);
+    border: 4px dashed #866e6e;
+    border-radius: 15px;
+    font-size: 20px;
+    padding: 7px;
+    color: #ffffff;
+    font-family: "MV Crooker", sans-serif;
+    font-weight: 100;
+  }
+  .btn-draw .btn-cutting .btn-cutting-exit:hover {
+    background-color: rgb(136, 91, 46);
+  }
+}
 * {
   margin: 0;
   padding: 0;

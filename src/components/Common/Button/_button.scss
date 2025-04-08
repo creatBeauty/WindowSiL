@@ -85,15 +85,15 @@
     15px
   );
 }
-// Cтраница РАСКРОЯ,кнопки
+// Cтраница РАСКРОЯ,кнопки ВЕРНУТЬСЯ
 .btn-cut {
   width: $page-width;
   display: flex;
   justify-content: center;
   align-items: center;
   position: fixed;
-  top: 800px; /* Расстояние от верхнего края окна */
-  right: 820px;
+  top: 100px; /* Расстояние от верхнего края окна */
+  right: 250px;
   .btn-cutting {
     @include button-styles(
       'btn-cutting-exit',
@@ -103,6 +103,25 @@
     );
   }
 }
+@media (min-width: 768px) {
+  .btn-cut {
+    width: $page-width;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 100px; /* Расстояние от верхнего края окна */
+    right: 850px;
+    .btn-cutting {
+      @include button-styles(
+        'btn-cutting-exit',
+        200px,
+        10px auto 850px auto,
+        20px
+      );
+    }
+  }
+}
 // Cтраница ЧЕРТЕЖ,кнопка
 .btn-draw {
   width: $page-width;
@@ -110,7 +129,7 @@
   align-items: center;
   position: fixed;
   top: 400px; /* Расстояние от верхнего края окна */
-  right: 820px;
+  right: 20px;
   .btn-drawing {
     @include button-styles(
       'btn-drawing-exit',
@@ -118,5 +137,24 @@
       10px auto 850px auto,
       20px
     );
+  }
+}
+@media (min-width: 768px) {
+  .btn-draw {
+    width: $page-width;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 400px; /* Расстояние от верхнего края окна */
+    right: 850px;
+    .btn-cutting {
+      @include button-styles(
+        'btn-cutting-exit',
+        200px,
+        10px auto 850px auto,
+        20px
+      );
+    }
   }
 }
