@@ -31,8 +31,8 @@ function costOrder() {
     console.log('Площадь переработки камня:' + recyclingArea + 'метр.кв.');
     let consumables = recyclingArea * 3000; //Расходники,  на один квадрат камня 3000р.
     console.log('Расходники, 3000 на один метр кв.' + consumables);
-    let costSquareMeter = Glstate.priceForListGlobal / 2.78; // В листе 2.78 м.кв.
-    console.log('Стоимость камня за кв.метр' + costSquareMeter);
+    let costSquareMeter = Math.round(Glstate.priceForListGlobal / 2.78); // В листе 2.78 м.кв.
+    console.log('Стоимость камня за кв.метр ' + costSquareMeter);
     let handlerSalary = Math.round(recyclingArea * costSquareMeter * 0.8);
 
     console.log('Зарплата работника' + handlerSalary);
