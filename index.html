@@ -29,20 +29,8 @@
             (m[i].a = m[i].a || []).push(arguments);
           };
         m[i].l = 1 * new Date();
-
-        const timeout = setTimeout(() => {
-          console.warn('Yandex Metrika failed to load (timeout)');
-          // Try alternate CDN on timeout
-          const altScript = document.createElement('script');
-          altScript.async = true;
-          altScript.src =
-            'https://cdn.jsdelivr.net/npm/yandex-metrica-watch/tag.js';
-          document.head.appendChild(altScript);
-        }, 5000);
-
         for (var j = 0; j < document.scripts.length; j++) {
           if (document.scripts[j].src === r) {
-            clearTimeout(timeout);
             return;
           }
         }
@@ -50,13 +38,6 @@
           (a = e.getElementsByTagName(t)[0]),
           (k.async = 1),
           (k.src = r),
-          (k.onload = function () {
-            clearTimeout(timeout);
-          }),
-          (k.onerror = function () {
-            console.warn('Yandex Metrika failed to load');
-            clearTimeout(timeout);
-          }),
           a.parentNode.insertBefore(k, a);
       })(
         window,
@@ -66,7 +47,7 @@
         'ym'
       );
 
-      ym(99530136, 'init', {
+      ym(100924887, 'init', {
         clickmap: true,
         trackLinks: true,
         accurateTrackBounce: true,
@@ -75,7 +56,7 @@
     <noscript
       ><div>
         <img
-          src="https://mc.yandex.ru/watch/99530136"
+          src="https://mc.yandex.ru/watch/100924887"
           style="position: absolute; left: -9999px"
           alt=""
         /></div
