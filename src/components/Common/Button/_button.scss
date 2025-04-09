@@ -52,6 +52,9 @@
 .btn-great {
   @include button-styles('btn-great-order', 200px, 10px auto 850px auto, 20px);
 }
+.btn-great2 {
+  @include button-styles('btn-great-order', 200px, 10px auto 100px auto, 20px);
+}
 
 //Вторая страница,кнопки
 .btn-choice {
@@ -92,7 +95,7 @@
   justify-content: center;
   align-items: center;
   position: fixed;
-  top: 100px; /* Расстояние от верхнего края окна */
+  top: 170px; /* Расстояние от верхнего края окна */
   right: 250px;
   .btn-cutting {
     @include button-styles(
@@ -110,7 +113,7 @@
     justify-content: center;
     align-items: center;
     position: fixed;
-    top: 100px; /* Расстояние от верхнего края окна */
+    top: 170px; /* Расстояние от верхнего края окна */
     right: 850px;
     .btn-cutting {
       @include button-styles(

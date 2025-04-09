@@ -120,6 +120,21 @@
   margin-left: 10px;
 }
 
+.txt-contact {
+  font-size: 20px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  width: 100;
+  color: #ffffff;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+#openMap {
+  width: 100px;
+  background: transparent;
+  border: none;
+}
+
 #calculator {
   background-image: url("../assets/images/mobile/Калькулятор44.webp");
   width: 320px;
@@ -394,6 +409,10 @@
   margin-top: 100px;
 }
 
+.cutting-txt {
+  font-size: 15px;
+}
+
 .burger-btn {
   width: 65px;
   height: 60px;
@@ -460,6 +479,38 @@
   font-weight: 100;
 }
 .btn-great .btn-great-order:hover {
+  background-color: rgb(136, 91, 46);
+}
+
+.btn-great2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  width: 200px;
+  border-radius: 15px;
+  background-color: rgb(204, 138, 71);
+  margin: 10px auto 100px auto;
+}
+.btn-great2:hover {
+  background-color: rgb(136, 91, 46);
+  transform: scale(1.1);
+}
+.btn-great2:hover .btn-great-order {
+  background-color: rgb(136, 91, 46);
+}
+.btn-great2 .btn-great-order {
+  margin: 5px;
+  background-color: rgb(204, 138, 71);
+  border: 4px dashed #866e6e;
+  border-radius: 15px;
+  font-size: 20px;
+  padding: 7px;
+  color: #ffffff;
+  font-family: "MV Crooker", sans-serif;
+  font-weight: 100;
+}
+.btn-great2 .btn-great-order:hover {
   background-color: rgb(136, 91, 46);
 }
 
@@ -603,7 +654,7 @@
   justify-content: center;
   align-items: center;
   position: fixed;
-  top: 100px; /* Расстояние от верхнего края окна */
+  top: 170px; /* Расстояние от верхнего края окна */
   right: 250px;
 }
 .btn-cut .btn-cutting {
@@ -645,7 +696,7 @@
     justify-content: center;
     align-items: center;
     position: fixed;
-    top: 100px; /* Расстояние от верхнего края окна */
+    top: 170px; /* Расстояние от верхнего края окна */
     right: 850px;
   }
   .btn-cut .btn-cutting {
