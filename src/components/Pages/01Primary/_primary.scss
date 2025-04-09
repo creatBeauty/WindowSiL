@@ -41,7 +41,7 @@
 .txt-contact {
   font-size: 17px;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  width: 100;
+  width: 90%;
   color: $text-color-light;
   margin-left: 10px;
   margin-right: 10px;
@@ -50,4 +50,5 @@
   width: 100px;
   background: transparent;
   border: none;
+  cursor: pointer;
 }

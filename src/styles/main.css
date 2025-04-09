@@ -123,7 +123,7 @@
 .txt-contact {
   font-size: 17px;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  width: 100;
+  width: 90%;
   color: #ffffff;
   margin-left: 10px;
   margin-right: 10px;
@@ -133,6 +133,7 @@
   width: 100px;
   background: transparent;
   border: none;
+  cursor: pointer;
 }
 
 #calculator {
@@ -462,10 +463,12 @@
 }
 .btn-great:hover {
   background-color: rgb(136, 91, 46);
+  cursor: pointer;
   transform: scale(1.1);
 }
 .btn-great:hover .btn-great-order {
   background-color: rgb(136, 91, 46);
+  cursor: pointer;
 }
 .btn-great .btn-great-order {
   margin: 5px;
@@ -494,10 +497,12 @@
 }
 .btn-great2:hover {
   background-color: rgb(136, 91, 46);
+  cursor: pointer;
   transform: scale(1.1);
 }
 .btn-great2:hover .btn-great-order {
   background-color: rgb(136, 91, 46);
+  cursor: pointer;
 }
 .btn-great2 .btn-great-order {
   margin: 5px;
@@ -529,10 +534,12 @@
 }
 .btn-choice .btn-calculator:hover {
   background-color: rgb(136, 91, 46);
+  cursor: pointer;
   transform: scale(1.1);
 }
 .btn-choice .btn-calculator:hover .btn-calculator-order {
   background-color: rgb(136, 91, 46);
+  cursor: pointer;
 }
 .btn-choice .btn-calculator .btn-calculator-order {
   margin: 5px;
@@ -561,10 +568,12 @@
 }
 .cost-order:hover {
   background-color: rgb(136, 91, 46);
+  cursor: pointer;
   transform: scale(1.1);
 }
 .cost-order:hover .btn-cost-order {
   background-color: rgb(136, 91, 46);
+  cursor: pointer;
 }
 .cost-order .btn-cost-order {
   margin: 5px;
@@ -596,10 +605,12 @@
 }
 .info-order .info-order-btn:hover {
   background-color: rgb(136, 91, 46);
+  cursor: pointer;
   transform: scale(1.1);
 }
 .info-order .info-order-btn:hover .info-order-btn-cd {
   background-color: rgb(136, 91, 46);
+  cursor: pointer;
 }
 .info-order .info-order-btn .info-order-btn-cd {
   margin: 5px;
@@ -628,10 +639,12 @@
 }
 .request-an-invoice:hover {
   background-color: rgb(136, 91, 46);
+  cursor: pointer;
   transform: scale(1.1);
 }
 .request-an-invoice:hover .request-an-invoice-btn {
   background-color: rgb(136, 91, 46);
+  cursor: pointer;
 }
 .request-an-invoice .request-an-invoice-btn {
   margin: 5px;
@@ -669,10 +682,12 @@
 }
 .btn-cut .btn-cutting:hover {
   background-color: rgb(136, 91, 46);
+  cursor: pointer;
   transform: scale(1.1);
 }
 .btn-cut .btn-cutting:hover .btn-cutting-exit {
   background-color: rgb(136, 91, 46);
+  cursor: pointer;
 }
 .btn-cut .btn-cutting .btn-cutting-exit {
   margin: 5px;
@@ -711,10 +726,12 @@
   }
   .btn-cut .btn-cutting:hover {
     background-color: rgb(136, 91, 46);
+    cursor: pointer;
     transform: scale(1.1);
   }
   .btn-cut .btn-cutting:hover .btn-cutting-exit {
     background-color: rgb(136, 91, 46);
+    cursor: pointer;
   }
   .btn-cut .btn-cutting .btn-cutting-exit {
     margin: 5px;
@@ -751,10 +768,12 @@
 }
 .btn-draw .btn-drawing:hover {
   background-color: rgb(136, 91, 46);
+  cursor: pointer;
   transform: scale(1.1);
 }
 .btn-draw .btn-drawing:hover .btn-drawing-exit {
   background-color: rgb(136, 91, 46);
+  cursor: pointer;
 }
 .btn-draw .btn-drawing .btn-drawing-exit {
   margin: 5px;
@@ -793,10 +812,12 @@
   }
   .btn-draw .btn-cutting:hover {
     background-color: rgb(136, 91, 46);
+    cursor: pointer;
     transform: scale(1.1);
   }
   .btn-draw .btn-cutting:hover .btn-cutting-exit {
     background-color: rgb(136, 91, 46);
+    cursor: pointer;
   }
   .btn-draw .btn-cutting .btn-cutting-exit {
     margin: 5px;
