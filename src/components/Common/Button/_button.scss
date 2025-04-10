@@ -95,7 +95,7 @@
   justify-content: center;
   align-items: center;
   position: fixed;
-  top: 170px; /* Расстояние от верхнего края окна */
+  top: 200px; /* Расстояние от верхнего края окна */
   right: 250px;
   .btn-cutting {
     @include button-styles(
@@ -113,7 +113,7 @@
     justify-content: center;
     align-items: center;
     position: fixed;
-    top: 170px; /* Расстояние от верхнего края окна */
+    top: 200px; /* Расстояние от верхнего края окна */
     right: 850px;
     .btn-cutting {
       @include button-styles(
