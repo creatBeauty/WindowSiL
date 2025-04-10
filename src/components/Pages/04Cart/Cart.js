@@ -39,7 +39,7 @@ function costOrder() {
     costOrderTxt.textContent = costOfTheMaterial + handlerSalary + consumables; //Стоимость.. материал + зп.рабочего + расходники
     txtInTexArea.textContent = `Прошу выставить счет ${
       costOrderTxt.textContent
-    } руб. на подоконники ${Glstate.basketItemsGlobal
+    } руб., за изготовление подоконников ${Glstate.basketItemsGlobal
       .map((item) => `${formatDimensions(item)}шт.`) // здесь указано количество и имя
       .join(', ')} из камня ${Glstate.selectedStoneGlobal}.`;
   });

@@ -727,7 +727,7 @@
     align-items: center;
     position: fixed;
     top: 200px; /* Расстояние от верхнего края окна */
-    right: 850px;
+    right: 750px;
   }
   .btn-cut .btn-cutting {
     display: flex;
@@ -813,7 +813,7 @@
     align-items: center;
     position: fixed;
     top: 400px; /* Расстояние от верхнего края окна */
-    right: 850px;
+    right: 750px;
   }
   .btn-draw .btn-cutting {
     display: flex;

@@ -114,7 +114,7 @@
     align-items: center;
     position: fixed;
     top: 200px; /* Расстояние от верхнего края окна */
-    right: 850px;
+    right: 750px;
     .btn-cutting {
       @include button-styles(
         'btn-cutting-exit',
@@ -150,7 +150,7 @@
     align-items: center;
     position: fixed;
     top: 400px; /* Расстояние от верхнего края окна */
-    right: 850px;
+    right: 750px;
     .btn-cutting {
       @include button-styles(
         'btn-cutting-exit',
