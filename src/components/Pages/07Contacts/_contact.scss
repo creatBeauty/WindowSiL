@@ -3,10 +3,14 @@
 #contacts {
   // background-image: url('../assets/images/mobile/Корзина.png');
   width: $page-width;
-  height: 1100px;
+  height: 4100px;
   overflow-y: auto;
   background-size: 100% auto;
   background-position: top center;
   background-repeat: no-repeat;
   position: relative;
+}
+.contacts-foto {
+  width: $page-width; // Устанавливаем максимальную ширину 100% для сохранения пропорций
+  height: auto;
 }

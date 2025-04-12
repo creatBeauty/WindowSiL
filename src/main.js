@@ -13,6 +13,7 @@ import btnVizDrawingExit from './components/Pages/05Drawing/drawing.js';
 import CartbtnVizDrawing from './components/Pages/04Cart/VisualDrawingBtn.js';
 import RequestAnInvoice from './components/Pages/04Cart/RequestAnInvoice.js';
 import { mapButton } from './components/Pages/01Primary/Map.js';
+import assignEdgeClickHandlers from './components/Pages/02Calculator/edgeButton.js';
 
 // Функция инициализации приложения
 function initApp() {
@@ -30,6 +31,7 @@ function initApp() {
     CartbtnVizDrawing();
     RequestAnInvoice();
     mapButton();
+    assignEdgeClickHandlers();
   } catch (error) {
     console.error('Ошибка при инициализации приложения:', error);
   }

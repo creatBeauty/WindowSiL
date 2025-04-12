@@ -6,6 +6,7 @@ const initialState = {
   priceForListGlobal: 0,
   totalPriceGlobal: 0,
   quantitySheetsAfterCuttingGlobal: 0,
+  Edge: 1,
   basketItemsGlobal: [], // Пустой массив
   userInfoGlobal: {
     name: '',

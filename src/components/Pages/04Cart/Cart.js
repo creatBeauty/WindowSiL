@@ -41,7 +41,9 @@ function costOrder() {
       costOrderTxt.textContent
     } руб., за изготовление подоконников ${Glstate.basketItemsGlobal
       .map((item) => `${formatDimensions(item)}шт.`) // здесь указано количество и имя
-      .join(', ')} из камня ${Glstate.selectedStoneGlobal}.`;
+      .join(', ')} из камня ${Glstate.selectedStoneGlobal}.С кромкой №${
+      Glstate.Edge
+    }`;
   });
 }
 export default costOrder;

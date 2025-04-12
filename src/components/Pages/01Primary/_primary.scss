@@ -18,7 +18,7 @@
   align-items: center;
   margin-top: 30px;
   margin-left: 10px;
-  margin-bottom: 370px;
+  margin-bottom: 30px;
 
   a {
     font-size: 20px;
@@ -38,6 +38,11 @@
     margin-left: 10px;
   }
 }
+.slogan1 {
+  color: $text-color-primary;
+  margin-bottom: 260px;
+  text-align: center;
+}
 .txt-contact {
   font-size: 17px;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -45,10 +50,13 @@
   color: $text-color-light;
   margin-left: 10px;
   margin-right: 10px;
+  text-align: center;
 }
 #openMap {
   width: 100px;
   background: transparent;
   border: none;
   cursor: pointer;
+  margin: auto;
+  display: block;
 }

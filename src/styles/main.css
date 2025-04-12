@@ -108,7 +108,7 @@
   align-items: center;
   margin-top: 30px;
   margin-left: 10px;
-  margin-bottom: 370px;
+  margin-bottom: 30px;
 }
 .header-contact a {
   font-size: 20px;
@@ -127,6 +127,12 @@
   margin-left: 10px;
 }
 
+.slogan1 {
+  color: #866e6e;
+  margin-bottom: 260px;
+  text-align: center;
+}
+
 .txt-contact {
   font-size: 17px;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
@@ -134,6 +140,7 @@
   color: #ffffff;
   margin-left: 10px;
   margin-right: 10px;
+  text-align: center;
 }
 
 #openMap {
@@ -141,6 +148,8 @@
   background: transparent;
   border: none;
   cursor: pointer;
+  margin: auto;
+  display: block;
 }
 
 #calculator {
@@ -189,6 +198,43 @@
 
 .calck-txt {
   color: #585f73;
+}
+
+.Edge-Selection div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+.Edge-Selection div .Edge {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 100px;
+  height: 100px;
+  border: 2px solid rgb(232, 209, 185);
+  background-color: #ffffff;
+  text-align: center;
+  position: relative;
+}
+.Edge-Selection div .Edge img {
+  width: 100%; /* Делаем изображение во всю ширину кнопки */
+  height: auto;
+}
+.Edge-Selection div .Edge .button-text {
+  position: absolute; /* Устанавливаем абсолютное позиционирование */
+  color: #866e6e; /* Цвет текста (можно настроить) */
+  font-size: 24px; /* Размер шрифта (можно настроить) */
+  font-weight: bold; /* Жирный текст (можно настроить) */
+  pointer-events: none; /* Игнорирование событий мыши на тексте, чтобы не мешал кликам по кнопке */
+}
+
+.Edge {
+  border: none;
+}
+.Edge :hover {
+  cursor: pointer;
+  border: 2px solid rgb(232, 209, 185);
 }
 
 #stone-selection {

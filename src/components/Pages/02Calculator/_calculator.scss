@@ -47,3 +47,40 @@
 .calck-txt {
   color: $text-color-secondary;
 }
+.Edge-Selection div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  .Edge {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 100px;
+    height: 100px;
+    border: 2px solid $button2-background-color;
+    background-color: $text-color-light;
+    text-align: center;
+    position: relative;
+    img {
+      width: 100%; /* Делаем изображение во всю ширину кнопки */
+      height: auto;
+    }
+    .button-text {
+      position: absolute; /* Устанавливаем абсолютное позиционирование */
+
+      // transform: translate(-100%, -100%); /* Центрирование по обеим осям */
+      color: $text-color-primary; /* Цвет текста (можно настроить) */
+      font-size: 24px; /* Размер шрифта (можно настроить) */
+      font-weight: bold; /* Жирный текст (можно настроить) */
+      pointer-events: none; /* Игнорирование событий мыши на тексте, чтобы не мешал кликам по кнопке */
+    }
+  }
+}
+.Edge {
+  border: none;
+  :hover {
+    cursor: pointer;
+    border: 2px solid $button2-background-color;
+  }
+}
