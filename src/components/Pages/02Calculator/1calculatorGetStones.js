@@ -8,7 +8,8 @@ function btnGetStonesCalculator() {
     strCalculator.classList.remove('active');
     strStoneSelection.classList.add('active');
     stoneSelections.forEach((el) => {
-      el.style.background = '#585f73';
+      el.style.background = '#ffffff';
+      el.style.border = '3px solid rgb(204, 138, 71)';
     });
   });
 }

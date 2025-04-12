@@ -200,6 +200,19 @@
   background-position: top center;
   background-repeat: no-repeat;
   position: relative;
+  perspective: 1000px;
+}
+#stone-selection .stonemanufacturer {
+  color: #ffffff;
+  text-decoration: none;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  margin-left: 10px;
+}
+#stone-selection .stonemanufacturer-name {
+  color: #ffffff;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-weight: 100;
+  text-align: center;
 }
 #stone-selection .txt-choose-a-color {
   color: #ffffff;
@@ -216,30 +229,30 @@
   align-items: center;
 }
 #stone-selection .grid-element {
-  display: flex; /* Используем Flexbox для расположения элементов */
-  align-items: center; /* Центруем элементы по вертикали */
+  display: flex;
+  align-items: center;
   justify-content: center;
-  padding: 0px; /* Отступы для кнопки */
-  border: 3px solid rgb(204, 138, 71); /* Граница кнопки */
+  padding: 0px;
+  border: 3px solid rgb(204, 138, 71);
   border-radius: 20px;
-  cursor: pointer; /* Курсор указателя при наведении */
-  background-color: #585f73; /* Фон кнопки */
+  cursor: pointer;
+  background-color: #ffffff;
   width: 90%;
+  height: 150px;
   margin: 10px;
-}
-#stone-selection .grid-element:hover {
-  background-color: rgb(69, 83, 96);
+  transform-style: preserve-3d;
+  transition: transform 0.5s, box-shadow 1.5s;
 }
 #stone-selection .grid-element .button-image {
-  width: 100px; /* Ограничение высоты изображения */
+  width: 150px;
   border-radius: 17px;
   margin-right: auto;
-  float: left;
-  filter: brightness(1.1) contrast(1.3); /* Увеличение яркости и контрастности */
-  transition: transform 0.3s;
+  margin-left: 20px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  transition: transform 0.7s ease;
 }
 #stone-selection .grid-element .button-image:hover {
-  transform: scale(1.35); /* Увеличение изображения при наведении */
+  transform: scale(1.1);
 }
 #stone-selection .grid-element .price {
   display: flex;
@@ -247,11 +260,11 @@
   margin: 5px;
 }
 #stone-selection .grid-element .price .info-stones {
-  color: #ffffff;
+  color: #866e6e;
 }
 #stone-selection .grid-element .button-description {
-  margin-top: 5px; /* Отступ сверху для описания */
-  color: #555; /* Цвет текста описания */
+  margin-top: 5px;
+  color: #555;
 }
 
 #cart {

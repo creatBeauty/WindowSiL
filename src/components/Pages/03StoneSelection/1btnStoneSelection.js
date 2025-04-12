@@ -17,7 +17,7 @@ function stoneSelect() {
 
       // Добавляем выделение к выбранному элементу
       el.classList.add('selectedStones');
-      el.style.background = 'rgb(204, 138, 71)';
+      el.style.border = '8px solid rgb(204, 138, 71)';
 
       // Извлекаем название камня
       const stoneType = el
