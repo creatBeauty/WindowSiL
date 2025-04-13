@@ -95,16 +95,13 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-left: auto;
+  margin-right: auto;
   // position: fixed;
   top: 200px; /* Расстояние от верхнего края окна */
   // right: 250px;
   .btn-cutting {
-    @include button-styles(
-      'btn-cutting-exit',
-      200px,
-      10px auto 50px auto,
-      20px
-    );
+    @include button-styles('btn-cutting-exit', 200px, 10px auto 5px auto, 20px);
   }
 }
 @media (min-width: 768px) {
@@ -113,6 +110,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-left: auto;
+    margin-right: auto;
     // position: fixed;
     top: 200px; /* Расстояние от верхнего края окна */
     // right: 750px;
@@ -120,7 +119,7 @@
       @include button-styles(
         'btn-cutting-exit',
         200px,
-        10px auto 50px auto,
+        10px auto 5px auto,
         20px
       );
     }
