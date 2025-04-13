@@ -92,16 +92,17 @@
 .btn-cut {
   width: $page-width;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  position: fixed;
+  // position: fixed;
   top: 200px; /* Расстояние от верхнего края окна */
-  right: 250px;
+  // right: 250px;
   .btn-cutting {
     @include button-styles(
       'btn-cutting-exit',
       200px,
-      10px auto 850px auto,
+      10px auto 50px auto,
       20px
     );
   }
@@ -112,14 +113,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    position: fixed;
+    // position: fixed;
     top: 200px; /* Расстояние от верхнего края окна */
-    right: 750px;
+    // right: 750px;
     .btn-cutting {
       @include button-styles(
         'btn-cutting-exit',
         200px,
-        10px auto 850px auto,
+        10px auto 50px auto,
         20px
       );
     }
