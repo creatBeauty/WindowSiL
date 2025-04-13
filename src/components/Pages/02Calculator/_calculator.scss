@@ -58,10 +58,15 @@
     justify-content: flex-start;
     width: 100px;
     height: 100px;
-    border: 2px solid $button2-background-color;
+
     background-color: $text-color-light;
     text-align: center;
     position: relative;
+    :hover {
+      cursor: pointer;
+      border: 2px solid $button2-background-color;
+    }
+
     img {
       width: 100%; /* Делаем изображение во всю ширину кнопки */
       height: auto;
@@ -75,12 +80,5 @@
       font-weight: bold; /* Жирный текст (можно настроить) */
       pointer-events: none; /* Игнорирование событий мыши на тексте, чтобы не мешал кликам по кнопке */
     }
-  }
-}
-.Edge {
-  border: none;
-  :hover {
-    cursor: pointer;
-    border: 2px solid $button2-background-color;
   }
 }
